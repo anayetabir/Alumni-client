@@ -20,7 +20,22 @@ const CreateEvent = () => {
         const endDate = form.endDate.value;
 
         const newEvent = { title, type, description, startDate, endDate }
+
         console.log(newEvent);
+
+        // Send Data to the Server
+
+        fetch('http://localhost:5000/event', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newEvent)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
 
     }
 
