@@ -1,0 +1,94 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+ 
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+.job-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+ 
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+ 
+.top{
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 80px;
+}
+ 
+.fire-icon {
+    color: rgb(255, 115, 0);
+ 
+}
+ 
+.readmore {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+ 
+.readmore:hover {
+    background-color: #0056b3;
+}
+ 
+.formfield{
+   margin:50px;
+    
+}
+ 
+ 
+/* For screens smaller than 576px (mobile devices) */
+@media (max-width: 575px) {
+    .grid-item {
+        max-width: 100%;
+    }
+}
+ 
+/* For screens between 576px and 767px (small tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .grid-item {
+        max-width: 300px;
+    }
+}
+ 
+/* For screens between 768px and 991px (medium tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid-item {
+        max-width: 400px;
+    }
+}
+ 
+/* For screens larger than 991px (desktops and larger) */
+@media (min-width: 992px) {
+    .grid-container {
+        padding: 0 30px;
+    }
+ 
+    .grid-item {
+        max-width: 300px;
+    }
+}

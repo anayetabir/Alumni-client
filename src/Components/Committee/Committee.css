@@ -1,0 +1,31 @@
+
+
+/* code try-2 */
+.committee {
+    margin-top: 6%;
+    width: auto;
+    height: auto;
+}
+
+.committee_icon {
+   
+    color: black;
+
+
+}
+
+.president {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.record {
+    background-color: aliceblue;
+    margin: 40px;
+    box-shadow: 2px;
+    border-radius: 5px;
+}
+
+
+
+/* code try-2 */

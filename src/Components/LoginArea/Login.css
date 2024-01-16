@@ -1,0 +1,23 @@
+.submit-area{
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.img-area{
+    margin-top: 55px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 5px;
+}
+.bsub{
+    width: 100%;
+}
+
+.box{
+    background-color: aliceblue;
+    margin-top: 5%;
+    padding: 2%;
+}

@@ -1,0 +1,46 @@
+
+.custom-card {
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: white;
+    max-width: 600px;
+}
+
+.custom-card:hover {
+    transform: scale(1.02);
+    border: 2px solid #52a4fb;
+}
+
+.custom-title {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.custom-text {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.custom-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.custom-b-t{
+    color: #495057;
+    border: none;
+}
+.custom-color{
+    color: #007bff;
+    border: none;
+}

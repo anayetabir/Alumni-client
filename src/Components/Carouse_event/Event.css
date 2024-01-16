@@ -1,0 +1,121 @@
+.event {
+    background-color: rgb(231, 219, 219);
+
+}
+
+
+.img .transition {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all, 2s linear;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 20px;
+}
+
+.container .box-container .box {
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+.container .box-container .box .image {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+
+}
+
+.container .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.container .box-container .box .content h3 {
+    font-size: 20px;
+    color: darkolivegreen;
+    line-height: 2;
+    padding: 15px 0;
+
+}
+
+.container .box-container .box .content .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid cadetblue;
+    font-size: 16px;
+}
+
+.container .box-container .box .content .btn:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: white;
+}
+
+.container .box-container .box .content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid cadetblue;
+}
+
+.container .box-container .box .content .icons span {
+    font-size: 15px;
+    color: cadetblue;
+}
+
+.container .box-container .box .content .icons span i {
+    color: crimson;
+    padding-right: 5px;
+}
+
+/* .c-b{
+    
+    border-color: #2a7be4!important;
+    border: 2px solid;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+.x{
+    margin: 20px;
+    border: none;
+}
+.x:hover{
+    border-color: #2a7be4!important;
+    border: 2px solid;
+    box-shadow: 10px 10px 15px gray;
+}
+
+
+
+
+
