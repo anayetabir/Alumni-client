@@ -34,7 +34,8 @@ function App() {
     },
     {
       path: "/",
-      element: <Home />
+      element: <Home />,
+      
     },
     {
       path: "/registration",
@@ -52,7 +53,7 @@ function App() {
     {
       path: "/NewsUpdate/:id",
       element: <PrivateRoute> <NewsUpdate /> </PrivateRoute>,
-      loader: ({params}) => fetch(`http://localhost:5000/news/${params.id}`)
+      loader: ({ params }) => fetch(`http://localhost:5000/news/${params.id}`)
     },
 
     {

@@ -2,6 +2,7 @@ import React from 'react';
 import Head from '../Head/Head';
 import Footer from '../Footer/Footer';
 import covevent from '../img/covevent.svg';
+import Swal from 'sweetalert2'
 
 
 const CreateEvent = () => {
@@ -35,6 +36,14 @@ const CreateEvent = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success',
+                        text: 'User Added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Confirm'
+                    })
+                }
             })
 
     }
