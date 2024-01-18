@@ -105,17 +105,18 @@
     align-items: center;
     flex-direction: column;
 } */
-.x{
+.x {
     margin: 20px;
     border: none;
 }
-.x:hover{
-    border-color: #2a7be4!important;
+
+.x:hover {
+    border-color: #2a7be4 !important;
     border: 2px solid;
     box-shadow: 10px 10px 15px gray;
 }
 
 
-
-
-
+.deleteBtn {
+    margin-right: 20px;
+}

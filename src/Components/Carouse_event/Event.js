@@ -112,12 +112,27 @@ const Event = () => {
                                                         </span>
                                                     </div>
                                                     <div>
-                                                        <span>
+                                                        <span className='deleteBtn'>
                                                             <i onClick={() => handleDelete(event._id)} className='fa-solid fa-trash'></i>
                                                         </span>
-                                                        <span>
-                                                            <i className='fa-solid fa-file-pen'></i>
-                                                        </span>
+
+                                                        <Link to={`updateEvent/${event._id}`}>
+
+                                                            <button>
+                                                                <i class="fa-solid fa-pen-to-square"></i>
+                                                            </button>
+                                                        </Link>
+
+                                                        {/* <Link to={`/updateEvent/${event._id}`}>
+                                                            <button className="dropdown-item text-danger">Update
+                                                                <i className='bx bx-edit'></i>
+                                                            </button>
+                                                        </Link> */}
+                                                        {/* <Link to={`updateEvent/${event._id}`}>
+                                                            <span>
+                                                                <i className='fa-solid fa-file-pen'></i>
+                                                            </span>                                            
+                                                             </Link> */}
                                                     </div>
                                                 </div>
                                             </div>

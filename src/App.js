@@ -21,6 +21,7 @@ import ArticleUpdate from './Components/Articles/ArticleUpdate';
 import NewsUpdate from './Components/News/NewsUpdate';
 import ChangeRole from './Components/Admins/SuperAdmin/ChangeRole';
 import ProfileUpdate from './Components/Profile/ProfileUpdate';
+import UpdateEvent from './Components/Carouse_event/UpdateEvent';
 
 
 
@@ -35,7 +36,7 @@ function App() {
     {
       path: "/",
       element: <Home />,
-      
+
     },
     {
       path: "/registration",
@@ -113,6 +114,11 @@ function App() {
     {
       path: "/createEvent",
       element: <CreateEvent />
+    },
+    {
+      path: "updateEvent/:id",
+      element: <UpdateEvent></UpdateEvent>,
+      loader: ({ params }) => fetch(`http://localhost:5000/event/${params.id}`)
     },
   ])
 
