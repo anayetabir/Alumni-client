@@ -4,6 +4,7 @@ import loginarea from '../img/loginarea.png';
 import sohidminar3 from '../img/shohidMinar3.jpg';
 import cevent from '../img/cevent.svg';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Event = () => {
     const [events, setEvents] = useState([]);
@@ -16,8 +17,44 @@ const Event = () => {
 
 
 
+    const handleDelete = _id => {
+        console.log(_id);
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
 
-    
+
+                fetch(`http://localhost:5000/event/${_id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        if (data.deletedCount > 0) {
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your event has been deleted.",
+                                icon: "success"
+                            });
+
+                        }
+                    })
+            }
+        });
+
+
+    }
+
+
+
+
 
     // Create pairs of events for two events in one slide
     const pairedEvents = [];
@@ -76,7 +113,7 @@ const Event = () => {
                                                     </div>
                                                     <div>
                                                         <span>
-                                                            <i className='fa-solid fa-trash'></i>
+                                                            <i onClick={() => handleDelete(event._id)} className='fa-solid fa-trash'></i>
                                                         </span>
                                                         <span>
                                                             <i className='fa-solid fa-file-pen'></i>
