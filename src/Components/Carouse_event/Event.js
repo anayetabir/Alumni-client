@@ -116,7 +116,7 @@ const Event = () => {
                                                             <i onClick={() => handleDelete(event._id)} className='fa-solid fa-trash'></i>
                                                         </span>
 
-                                                        <Link to={`updateEvent/${event._id}`}>
+                                                        <Link to={`/updateEvent/${event._id}`}>
 
                                                             <button>
                                                                 <i class="fa-solid fa-pen-to-square"></i>

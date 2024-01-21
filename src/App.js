@@ -116,7 +116,7 @@ function App() {
       element: <CreateEvent />
     },
     {
-      path: "updateEvent/:id",
+      path: "/updateEvent/:id",
       element: <UpdateEvent></UpdateEvent>,
       loader: ({ params }) => fetch(`http://localhost:5000/event/${params.id}`)
     },
