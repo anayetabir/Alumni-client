@@ -7,20 +7,20 @@ const Footer = () => {
     return (
         <div>
             <footer >
-                
+
 
 
                 <div className='footer_info' >
                     <div className="footer_width about">
-                        <h2>About</h2>
+                        <h2>About  <div className='underline'><span></span></div></h2>
                         <p className='text-white'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo natus labore harum quisquam accusantium facere eos non dolores aspernatur odio soluta animi, nobis veniam qui vero, iste enim doloribus nostrum?
                         </p>
                         <div className='social-media'>
                             <ul>
-                            <li><a className='soi' ><i className="fa-brands fa-facebook"></i></a></li>
-                             <li><a className='soi' ><i className="fa-brands fa-whatsapp"></i></a></li>
-                            <li><a className='soi' ><i className="fa-brands fa-instagram"></i></a></li>
+                                <li><a className='soi' ><i className="fa-brands fa-facebook"></i></a></li>
+                                <li><a className='soi' ><i className="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a className='soi' ><i className="fa-brands fa-instagram"></i></a></li>
                             </ul>
 
                         </div>
@@ -29,7 +29,7 @@ const Footer = () => {
 
                     <div className="footer_width link">
 
-                        <h2>Quick Link</h2>
+                        <h2>Quick Link <div className='underline'><span></span></div></h2>
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
@@ -43,7 +43,7 @@ const Footer = () => {
 
 
                     <div className="footer_width contact">
-                        <h2>Contact</h2>
+                        <h2>Contact <div className='underline'><span></span></div></h2>
                         <ul>
                             <li>
                                 <span className='footer_icon1'><i class="fa-solid fa-location-dot"></i></span>
@@ -79,6 +79,7 @@ const Footer = () => {
 
                 <div>
                     <img src={payWith} className='footImg' alt="" />
+                    <p>Created by LU CSE Alumni Association © 2024</p>
                 </div>
             </footer>
 
