@@ -16,10 +16,12 @@ const Login = () => {
         <div>
             <div className='container-fluid box'>
                 <div className='row'>
-                    
+
                     <div className='col-md-4 justify-content-center'>
                         <div className='mb-4 text-center mt-5 p-5'>
-                            <h3>Join the CSE Alumni Association, Leading University to reconnect with your friends, classmates, seniors & juniors.</h3>
+                            <div className='animated-text'>
+                                <h3>Join the CSE Alumni Association, Leading University to reconnect with your <span> </span></h3>
+                            </div>
                         </div>
                         {/* <form>
                             <div className="form-row">

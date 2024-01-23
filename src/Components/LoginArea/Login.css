@@ -1,4 +1,4 @@
-.submit-area{
+.submit-area {
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px gray;
@@ -6,18 +6,87 @@
     background-color: rgb(255, 255, 255);
 }
 
-.img-area{
+.img-area {
     margin-top: 55px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px gray;
     padding: 5px;
 }
-.bsub{
+
+.bsub {
     width: 100%;
 }
 
-.box{
+.box {
     background-color: aliceblue;
     margin-top: 5%;
     padding: 2%;
+}
+
+
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Friends.";
+    color: #28a745;
+    animation: words 20s infinite;
+    line-height: 1.5;
+
+
+}
+
+
+
+
+
+
+
+.animated-text span::after {
+    content: "";
+    position: relative;
+    width: 10px;
+    height: 30%;
+    background-color: aliceblue;
+    border-left: 2px solid #28a745;
+    right: -8px;
+    animation: .8s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid aliceblue;
+        height: 50%;
+
+    }
+
+}
+
+@keyframes words {
+
+    0%,
+    25% {
+        content: "Friends.";
+    }
+
+    26%,
+    50% {
+        content: "Classmates.";
+
+    }
+
+    51%,
+    75% {
+        content: "Seniors.";
+
+    }
+
+    76%,
+    100% {
+        content: "Juniors.";
+
+    }
+
 }
