@@ -21,19 +21,23 @@
     background-color: aliceblue;
     margin-top: 5%;
     padding: 2%;
+
 }
 
 
 
-.animated-text span {
+.animated-text .text-span {
     position: relative;
 }
 
-.animated-text span::before {
+.animated-text .text-span::before {
     content: "Friends.";
     color: #28a745;
     animation: words 20s infinite;
     line-height: 1.5;
+    font-size: 1.2em;
+
+
 
 
 }
@@ -44,24 +48,24 @@
 
 
 
-.animated-text span::after {
+.animated-text .text-span::after {
     content: "";
     position: relative;
     width: 10px;
-    height: 30%;
+    height: 100%;
     background-color: aliceblue;
     border-left: 2px solid #28a745;
-    right: -8px;
-    animation: .8s infinite;
+    right: -5px;
+    animation: cursor .8s infinite;
 }
 
 @keyframes cursor {
     to {
         border-left: 2px solid aliceblue;
-        height: 50%;
+        animation-duration: 1.5s;
+
 
     }
-
 }
 
 @keyframes words {

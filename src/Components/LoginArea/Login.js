@@ -20,7 +20,7 @@ const Login = () => {
                     <div className='col-md-4 justify-content-center'>
                         <div className='mb-4 text-center mt-5 p-5'>
                             <div className='animated-text'>
-                                <h3>Join the CSE Alumni Association, Leading University to reconnect with your <span> </span></h3>
+                                <h3>Join the CSE Alumni Association, Leading University to reconnect with your <span className='text-span'> </span></h3>
                             </div>
                         </div>
                         {/* <form>

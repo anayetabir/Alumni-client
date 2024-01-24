@@ -12,7 +12,7 @@ const Footer = () => {
 
                 <div className='footer_info' >
                     <div className="footer_width about">
-                        <h2>About  <div className='underline'><span></span></div></h2>
+                        <h2>About  <div className='underline1'><span className='ft-span'></span></div></h2>
                         <p className='text-white'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo natus labore harum quisquam accusantium facere eos non dolores aspernatur odio soluta animi, nobis veniam qui vero, iste enim doloribus nostrum?
                         </p>
@@ -29,7 +29,7 @@ const Footer = () => {
 
                     <div className="footer_width link">
 
-                        <h2>Quick Link <div className='underline'><span></span></div></h2>
+                        <h2>Quick Link <div className='underline1'><span className='ft-span'></span></div></h2>
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
@@ -42,8 +42,8 @@ const Footer = () => {
                     </div>
 
 
-                    <div className="footer_width contact">
-                        <h2>Contact <div className='underline'><span></span></div></h2>
+                    <div className="footer_width contact1">
+                        <h2> Contact <div className='underline1'><span className='ft-span'></span></div></h2>
                         <ul>
                             <li>
                                 <span className='footer_icon1'><i class="fa-solid fa-location-dot"></i></span>

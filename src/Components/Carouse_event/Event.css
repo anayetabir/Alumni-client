@@ -48,7 +48,7 @@
 
 .container .box-container .box .image img {
     height: 100%;
-    width: 100%;
+    width: 50%;
     object-fit: cover;
 }
 
@@ -96,15 +96,7 @@
     padding-right: 5px;
 }
 
-/* .c-b{
-    
-    border-color: #2a7be4!important;
-    border: 2px solid;
-    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-} */
+
 .x {
     margin: 20px;
     border: none;
@@ -119,4 +111,8 @@
 
 .deleteBtn {
     margin-right: 20px;
+}
+
+.evn-btn {
+    border: none;
 }
