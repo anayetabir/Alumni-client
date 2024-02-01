@@ -94,3 +94,131 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+
+}
+
+.shadow__btn {
+    background: rgb(255, 25, 0);
+    box-shadow: 0 0 25px rgb(113, 9, 9);
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(168, 28, 26),
+        0 0 25px rgb(206, 14, 14),
+        0 0 50px rgb(187, 11, 11),
+        0 0 100px rgb(228, 7, 7);
+} */
+
+.home-pic {
+    background-color: #e8e8e8;
+}
+
+
+.home-card {
+    overflow: visible;
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.home-card:before,
+.home-card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -99;
+}
+
+.home-details {
+    position: absolute;
+    left: -10px;
+    right: 0;
+    bottom: 5px;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Image*/
+.home-imgbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.home-img {
+    background: #4158D0;
+    background-image: linear-gradient(45deg, #4158D0, #C850C0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Text*/
+.home-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+}
+
+.home-caption {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4158D0;
+    display: block;
+    margin-top: 5px;
+}
+
+/*Hover*/
+.home-card:hover .home-imgbox {
+    bottom: 80px;
+}
+
+.home-card:hover:before {
+    transform: rotate(20deg);
+}
+
+.home-card:hover:after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}

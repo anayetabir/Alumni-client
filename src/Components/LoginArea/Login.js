@@ -45,12 +45,30 @@ const Login = () => {
                         <img src={reading} alt="" className='img-fluid justify-content-end mt-3 p-3' />
                     </div>
 
-                    <div className='col-md-12'>
-                        <div className='col'>
-                            <div className='img-area'>
-                                <img src={loginarea} alt="log" className="img-fluid" />
+                    <div className='row home-pic'>
+                        <div className='col-md-6 d-flex align-items-center' >
+                            <div className='col'>
+                                <div className='img-area'>
+                                    <img src={loginarea} alt="log" className="img-fluid" />
+                                </div>
                             </div>
                         </div>
+
+                        <div className='col-md-6 d-flex align-items-center justify-content-center'>
+                            <div class="home-card">
+                                <div class="home-imgbox">
+                                    <div class="home-img"></div>
+                                </div>
+                                <div class="home-details">
+                                    <h2 class="home-title">Anayet Abir</h2>
+                                    <span class="home-caption"><span className='text-black'>ID : </span>2012020191</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
