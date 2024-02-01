@@ -117,6 +117,7 @@ const Whyjoinus = () => {
                 <div>
                     <div className='p-5'>
                         <h1 className='text-center'>Join the CSE Alumni Association, LU Network, reconnect with your friends, classmates, seniors, and juniors from the Department of Computer Science & Engineering, LU. Grow your network & advance your career.</h1>
+                        <button className='btn1 btn-primary' >Join Now</button>
                     </div>
                     {user ?
                         <>
