@@ -131,6 +131,15 @@ const Whyjoinus = () => {
             </div>
         </Swiper>
 
+
+
+
+
+
+
+
+
+
     );
 };
 

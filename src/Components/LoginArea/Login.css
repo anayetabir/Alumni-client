@@ -7,7 +7,7 @@
 }
 
 .img-area {
-    margin-top: 55px;
+
     border-radius: 10px;
     box-shadow: 5px 5px 10px gray;
     padding: 5px;
@@ -26,6 +26,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 .animated-text .text-span {
     position: relative;
 }
@@ -41,11 +51,6 @@
 
 
 }
-
-
-
-
-
 
 
 .animated-text .text-span::after {
@@ -138,6 +143,10 @@
     background-color: #e8e8e8;
 }
 
+
+
+
+/* New */
 
 .home-card {
     overflow: visible;
