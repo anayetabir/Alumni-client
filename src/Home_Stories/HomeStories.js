@@ -28,7 +28,7 @@ const carousel = (slider) => {
 
 const HomeStories = () => {
 
-    const [sliderRef] = useKeenSlider(
+    const [sliderRef] = useKeenSlider( 
         {
             loop: true,
             selector: ".carousel__cell",
@@ -42,7 +42,7 @@ const HomeStories = () => {
         <div className='body1'>
             <h1>Stories</h1>
 
-            <div className="wrapper">
+            <div className="wrapper homeStories1">
                 <div className="scene">
                     <div className="carousel keen-slider" ref={sliderRef}>
                         <div className="carousel__cell number-slide1 "> <img src={sohidminar3} className='img7' alt='...' /></div>
