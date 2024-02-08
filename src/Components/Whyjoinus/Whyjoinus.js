@@ -56,7 +56,11 @@ const Whyjoinus = () => {
                 <div className='container-fluid mt-5 mb-5'>
                     <div>
                         <div className='p-5'>
-                            <h1 className='text-center'>Join the CSE Alumni Association, LU Network, reconnect with your friends, classmates, seniors, and juniors from the Department of Computer Science & Engineering, LU. Grow your network & advance your career.</h1>
+                            <div className='animated-text'>
+                                <h1 className='text-center'>Join the CSE Alumni Association, LU Network, reconnect with your <span className='text-span'></span> from the Department of Computer Science & Engineering, LU. Grow your network & advance your career.</h1>
+
+                            </div>
+
                         </div>
                         {user ?
                             <>

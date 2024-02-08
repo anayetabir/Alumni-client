@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import Event from '../Carouse_event/Event';
 import HomeStories from '../Stories/HomeStories/HomeStories';
 import HomeArticle from '../Articles/HomeArticle/HomeArticle';
+import HomeJobs from '../Job/HomeJobs/HomeJobs';
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
             <Whyjoinus></Whyjoinus>
             <HomeStories></HomeStories>
             <HomeArticle></HomeArticle>
+            <HomeJobs></HomeJobs>
             <Footer></Footer>
             {/* <Head></Head>
       <Login></Login>

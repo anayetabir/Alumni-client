@@ -1,4 +1,5 @@
 import React from 'react';
+import './EventReg.css';
 
 const EventReg = () => {
 

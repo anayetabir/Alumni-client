@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import sohidminar3 from '../../img/shohidMinar3.jpg';
 
-import './homestories.css';
+import './HomeStories.css';
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -39,8 +39,8 @@ const HomeStories = () => {
                         slideShadows: true,
                     }}
                     pagination={{
-                    clickable: true,
-                }}
+                        clickable: true,
+                    }}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
@@ -48,17 +48,21 @@ const HomeStories = () => {
                     modules={[EffectCoverflow, Pagination, Autoplay]}
                     className="mySwiper"
                 >
-                    <SwiperSlide className='' style={{ width: '700px' }}>
-                        <img src={sohidminar3} className='img-fluid' style={{ width: '700px' }}/>
+                    <SwiperSlide className='' style={{ width: '500px' }}>
+                        <img src={sohidminar3} className='img-fluid' style={{ width: '500px' }} />
+                        <h2>Abir</h2>
                     </SwiperSlide>
-                    <SwiperSlide className='' style={{ width: '700px' }}>
-                        <img src={sohidminar3} className='img-fluid' style={{ width: '700px' }}/>
+                    <SwiperSlide className='' style={{ width: '500px' }}>
+                        <img src={sohidminar3} className='img-fluid' style={{ width: '500px' }} />
+                        <h2>Abir</h2>
                     </SwiperSlide>
-                    <SwiperSlide className='' style={{ width: '700px' }}>
-                        <img src={sohidminar3} className='img-fluid' style={{ width: '700px' }}/>
+                    <SwiperSlide className='' style={{ width: '500px' }}>
+                        <img src={sohidminar3} className='img-fluid' style={{ width: '500px' }} />
+                        <h2>Abir</h2>
                     </SwiperSlide>
-                    <SwiperSlide className='' style={{ width: '700px' }}>
-                        <img src={sohidminar3} className='img-fluid' style={{ width: '700px' }}/>
+                    <SwiperSlide className='' style={{ width: '500px' }}>
+                        <img src={sohidminar3} className='img-fluid' style={{ width: '500px' }} />
+                        <h2>Abir</h2>
                     </SwiperSlide>
                 </Swiper>
             </div>
