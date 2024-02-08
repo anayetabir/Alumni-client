@@ -1,0 +1,116 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #565773;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6f7ff; /* Light blue background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(214, 26, 26, 0.1);
+}
+
+.job-position,
+.job-location,
+.job-description,
+.job-name,
+.job-title,
+.top,
+.job-Update,
+.formfield {
+    color: #1b0404; /* Dark brown text color */
+    font-family: 'Georgia', serif;
+}
+
+.job-name {
+    font-size: 22px; /* Increased font size for prominence */
+    font-weight: bold;
+    margin-top: 15px; /* Increased margin top */
+}
+
+.job-title {
+    font-size: 18px; /* Increased font size for title */
+    font-weight: bolder; /* Made the title bolder */
+    margin-top: 10px;
+}
+
+.top {
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.fire-icon {
+    color: #ff7300;
+}
+
+@media (max-width: 575px) {
+    .grid-item {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .grid-item {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .grid-item {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        padding: 0 30px;
+    }
+
+    .grid-item {
+        max-width: 300px;
+    }
+}
+
+.job-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff; /* Default background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default neomorphic shadow */
+  }
+  
+  .job-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Neomorphic shadow on hover */
+  }
+  
+  .btn-container {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .btn-container:hover {
+    opacity: 0.8;
+  }
+  
+  .edit-button:hover {
+    text-decoration: underline;
+    /* Add any other text animation styles you want */
+  }
+  
+  .delete-button:hover {
+    background-color: #ff9999; /* Add your desired hover background color */
+    color: #ffffff; /* Text color on hover */
+    box-shadow: 0 8px 16px rgba(255, 153, 153, 0.6); /* Colorful neomorphic shadow on hover */
+  }

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.body2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f5f9;
+    padding-top: 2%;
+    
+}
+
+
+
+.container{
+    width: 80%;
+    margin: 3% auto;
+    display: flex;
+    height: 900px;
+    box-shadow: 0 12px 55px #5557;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.login-link {
+    background-color: color-mix(in srgb-linear, #141E30 100%, #243B55 100%);
+    /* background-image: url(./img/bg-shapes.svg);
+    background-position: bottom left;
+    background-repeat: no-repeat; */
+    width: 30%;
+    padding: 3%;
+}
+
+.signup-form-container {
+    width: 70%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    color: #fff;
+}
+
+.side-big-heading {
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 46% 0 5%;
+
+}
+
+.primary-bg-text {
+    color: #eff0ff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.loginbtn {
+    text-decoration: none;
+    color: #fff;
+    width: 70%;
+    font-weight: 500;
+    display: inline-block;
+    margin: 7% 15%;
+    text-align: center;
+    border: 2px solid #eff0ff;
+    border-radius: 24px;
+    padding: 3% 0;
+    background-color: color-mix(in srgb-linear, #141E30 100%, #243B55 100%);
+    ;
+}
+
+.loginbtn:hover {
+    color: #000000;
+    background-color: #fff;
+}
+
+.big-heading {
+    font-weight: 900;
+    font-size: 2rem;
+    color: color-mix(in srgb-linear, #141E30 100%, #243B55 100%);
+}
+
+.social-media-platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-platform a {
+    color: #860808;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-flex;
+    border: 1px solid #e0e3e2;
+    margin: 10%;
+    padding: 11%;
+    content: "Google SignIn";
+}
+
+.social-media-platform a:hover {
+    color: color-mix(in srgb-linear, #141E30 100%, #243B55 100%);
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+    width: 70%;
+    flex-direction: row;
+
+}
+
+.progress-bar .stage {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.progress-bar .tool-tip {
+    color: color-mix(in srgb-linear, #141E30 100%, #243B55 100%);
+    font-weight: 600;
+}
+
+.stageno {
+    margin: 6% 0;
+    padding: 2% 7%;
+    border-radius: 50%;
+    background-color: #f5f5f9;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin: 3% 0;
+
+}
+
+.text-fields {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 2%;
+    margin: 0 2%;
+    width: 46%;
+    border-radius: 4px;
+    color: #84848d;
+}
+
+.input-logreg {
+    border: none;
+    outline: none;
+    background: inherit;
+    color: #84848d;
+    width: 200%;
+    margin-left: 4%;
+    font-size: 1rem;
+
+}
+
+.signup-form-content {
+    width: 100%;
+    padding: 0 3%;
+}
+
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field,
+.input-logreg::placeholder {
+    background-color: #fff;
+    color: #84848d;
+
+}
+
+.input-logreg[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../img/cake.png);
+    height: 20px;
+    width: 20px;
+
+}
+
+.text-fields.name:after {
+    content: 'Name';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -250px;
+    width: 180px;
+    color: #333;
+    top: -33px;
+}
+
+.text-fields.ID:after {
+    content: 'Student ID';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -210px;
+    width: 334px;
+    color: #333;
+    top: -33px;
+}
+
+.text-fields.dob:after {
+    content: 'Date of Birth';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -205px;
+    width: 365px;
+    color: #333;
+    top: -33px;
+}
+
+.gender-selection {
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
+    width: 100%;
+}
+
+.field-heading {
+    color: #333;
+    width: 20%;
+    margin-top: 3.5%;
+}
+
+.gender-selection label {
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    color: #84848d;
+    width: 20%;
+
+}
+
+.input-logreg[type="radio"] {
+    accent-color: #333;
+    margin-right: 6%;
+}
+
+.pagination-btns {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+    padding: 0 4%;
+}
+
+.nextPage,
+.previousPage {
+    background-color: color-mix(in srgb-linear, #141E30 100%, #243B55 100%);
+    ;
+    color: #fff;
+    width: 45%;
+    cursor: pointer;
+    padding: 2%;
+    font-weight: 500;
+    font-size: 1rem;
+    border: 4px;
+    outline: none;
+    border-radius: 20px;
+    /* next and previous button rounding */
+}
+
+.nextPage:hover,
+.previousPage:hover {
+    background-color: #696cff;
+}
+
+.text-fields.phone:after {
+    content: 'Phone No';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -187px;
+    width: 334px;
+    color: #333;
+    top: -33px;
+}
+
+.text-fields.email:after {
+    content: 'Email ID';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -187px;
+    width: 334px;
+    color: #333;
+    top: -33px;
+}
+
+.text-fields.password:after {
+    content: 'Password';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -187px;
+    width: 334px;
+    color: #333;
+    top: -33px;
+}
+
+.text-fields.confirmpassword:after {
+    content: 'Confirm Pass';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -170px;
+    width: 540px;
+    color: #333;
+    top: -33px;
+}
+
+.text-fields.city:after {
+    content: 'City';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -250px;
+    width: 180px;
+    color: #333;
+    top: -33px;
+}
+
+.text-fields.blood:after {
+    content: 'Blood Group';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -170px;
+    width: 540px;
+    color: #333;
+    top: -33px;
+}
+
+.text-fields.batch:after {
+    content: 'Batch';
+    background-color: #fff;
+    position: relative;
+    padding: 0 3%;
+    left: -250px;
+    width: 220px;
+    color: #333;
+    top: -33px;
+}
+
+.login-form-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form-contents .text-fields {
+    margin: 3% 2%;
+    width: 70%;
+    padding: 3%;
+}
+
+.login-form-contents .text-fields.email:after {
+    left: -240px;
+}
+
+.login-form-contents .text-fields.password:after {
+    left: -240px;
+}
+
+.custom-select {
+    border: none;
+}
+
+
+
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin: 3% auto;
+    }
+
+    .login-link {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .signup-form-container {
+        width: 100%;
+        padding: 5% 0;
+    }
+
+    .side-big-heading {
+        font-size: 1.5rem;
+        margin: 20% 0 5%;
+    }
+
+    .social-media-platform a {
+        padding: 8%;
+    }
+
+    .progress-bar {
+        flex-direction: column;
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    .progress-bar .stage {
+        margin-bottom: 10%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        margin: 4% 0;
+    }
+
+    .text-fields,
+    .input-logreg {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .text-fields.blood:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    
+}

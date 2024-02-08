@@ -1,0 +1,33 @@
+/* .shadow{
+    background: #DAE1E9;
+    box-shadow: 4px 11px 13px 0px rgba(0, 0, 0, 0.25), 5px 6px 24px 0px rgba(0, 0, 0, 0.25) inset;
+} */
+.shadow:hover{
+    border-color: #2a7be4!important;
+    border: 2px solid;
+}
+.backCLR{
+    /* background-color: beige; */
+    background-image: linear-gradient(to right, #d3cce3, #e9e4f0);
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+    overflow: hidden;
+}
+
+/* .bg{
+    background-color:#ff9d00;
+} */
+
+ .image1 {
+    margin-top: 10px;
+    color: cyan;
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+/* .why-box {
+    background-color:color-mix(in srgb-linear, #141E30 100%, #243B55 100%);
+    height: 300px;
+} */

@@ -1,0 +1,177 @@
+.scard-container {
+  width: 100%;
+  /* Set your desired fixed width */
+  margin: 10px;
+  /* Set margin as needed */
+}
+
+.s-back {
+  background-color: #EFF0FF;
+  height: 100%;
+  width: auto;
+}
+
+.b-stories {
+  background-color: #EFF0FF;
+
+}
+
+.s-p {
+  padding-top: 110px;
+}
+
+.s-label {
+  height: 49px;
+  width: 119px;
+}
+
+.s-label {
+  margin-left: 5%;
+  /* Adjust the left margin as needed */
+}
+
+.s-text {
+  color: #000000;
+  font-size: 42px;
+  /* Increase the font size for a more dramatic effect */
+  font-weight: 500;
+  /* Increase the font weight for a bolder look */
+  line-height: 1.2;
+  /* Adjust line height for better readability */
+  opacity: 0.9;
+  /* Adjust opacity as needed */
+  text-transform: uppercase;
+  /* Convert text to uppercase for a classy appearance */
+  margin-left: 100px;
+}
+
+.s-box {
+  max-width: 75%;
+}
+
+
+
+
+
+.form-floating {
+  margin-bottom: 40px;
+  /* Set the desired margin between input fields */
+}
+
+.form-control {
+  width: 100%;
+  /* Make the input fields fill the entire width of the parent container */
+}
+
+.stories-dropdown {
+  background: #c1cbdc;
+  color: #090000;
+  /* Change button text color on hover */
+  border: none;
+  /* Remove border */
+  border-radius: 5px;
+  /* Add border-radius for rounded corners */
+}
+
+.stories-dropdown button {
+  color: #0a0000;
+  /* Set text color to white */
+  transition: background 0.3s, transform 0.2s;
+  /* Add transitions for smooth background color and scale change */
+}
+
+.stories-dropdown button:hover {
+  background: #010524;
+  /* Change gradient on hover */
+  color: #fff;
+  /* Change button text color on hover */
+  transform: scale(1.05);
+  /* Scale up on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow on hover */
+}
+
+
+
+.neumorphic-card {
+  border-radius: 15px;
+  /* Adjust the border-radius as needed */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  /* Add transition for box shadow and transform */
+  margin-top: 50px;
+  padding: 20px;
+  /* Add padding for content */
+}
+
+.neumorphic-card:hover {
+  box-shadow: 12px 12px 24px #b2bcd8, -12px -12px 24px #ffffff;
+  /* Change box shadow on hover */
+  transform: scale(1.03);
+  /* Slight scale up on hover */
+}
+
+.stories-btn {
+  background: linear-gradient(45deg, #9cb2c9, #08231d);
+  /* Set your desired gradient */
+  color: #fff;
+  /* Set your desired button text color */
+  padding: 12px 24px;
+  /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  margin-left: 40px;
+  border-radius: 8px;
+  /* Add border-radius for rounded corners */
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  /* Add transition for background and text color */
+}
+
+.stories-btn:hover {
+  background: linear-gradient(45deg, #0056b3, #010524);
+  /* Change gradient on hover */
+  color: #fff;
+  /* Change button text color on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow on hover */
+}
+
+.form-floating {
+  margin-bottom: 40px;
+  /* Set the desired margin between input fields */
+}
+
+.form-control {
+  width: 100%;
+  /* Make the input fields fill the entire width of the parent container */
+}
+
+
+
+
+.stories-card {
+  background-color: #40415b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow for a classy look */
+  transition: box-shadow 0.3s ease-in-out;
+  /* Add transition for the box shadow */
+}
+
+.stories-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Change box shadow on hover for a subtle effect */
+}
+
+.stories-title {
+  font-weight: 600;
+  color: rgb(237, 228, 228);
+}
+
+.stories-text {
+  font-weight: 300;
+  color: rgb(197, 191, 191);
+}
+
+.stories-date {
+
+  color: rgb(197, 191, 191);
+}

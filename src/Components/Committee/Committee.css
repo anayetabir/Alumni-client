@@ -1,0 +1,63 @@
+.com-back {
+    background-color: #EFF0FF;
+    height: auto;
+    width: auto;
+}
+
+.com {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 13px;
+    position: relative;
+}
+
+.com .text-wrapper {
+    padding-top: 100px;
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}
+
+.com .year {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.year {
+    padding-bottom: 60px;
+}
+
+.deg-back {
+    background-color: #FFFFFF;
+    width: 90%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.cus-card {
+    border: 1px solid;
+    border-color: #EFF0FF;
+    /* border: none; */
+}
+
+.cus-card:hover {
+    border: 3px solid;
+    border-color: #d8daf7;
+}

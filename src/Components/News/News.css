@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.news {
+	font-family: "Poppins", sans-serif;
+	background: #EFF0FF;	
+}
+
+/* .news{
+	background-image: url('../img/news_background3.png');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+	opacity: .93;
+} */
+.custom-container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main-content {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+.post-block {
+	background: #fff;
+	padding: 25px;
+	margin-bottom: 25px;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: all 0.2s;
+	border: 1px solid rgb(37, 145, 195);
+	/* box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.25); */
+}
+.post-block:hover{
+	box-shadow: 20px 20px 27px 0px rgba(116, 77, 206, 0.25);
+}
+
+.post-block img.author-img {
+	height: 45px;
+	width: 45px;
+	border-radius: 45px;
+}
+
+.post-block img.author-img.author-img-small {
+	height: 30px;
+	width: 30px;
+}
+
+.post-block-content img {
+	max-width: 100%;
+	border-radius: 5px;
+
+}
+
+.post-block-content {
+	padding-left: 30px;
+}
+
+.post-block .comment-view-box {
+	border-radius: 5px;
+	background: rgba(232, 234, 240, 1);
+	padding: 15px;
+}
+
+.comment-view-box {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+/* .xx {
+	margin-left: -460px;
+} */
+
+.p {
+	text-align: start;
+}
+
+.mm {
+	margin-left: 10px;
+	/* margin-top: 10px; */
+}
+
+.dark {
+	color: black;
+}
+
+.create-time {
+	color: rgba(0, 0, 0, 0.43);
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+}
+
+.user-Name {
+	color: #000;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.comment-area {
+	width: 90%;
+	height: 70px;
+	flex-shrink: 0;
+	border-radius: 55px;
+	background: linear-gradient(92deg, #FFF 55.47%, rgba(182, 203, 235, 0.53) 84.47%, rgba(121, 175, 236, 0.64) 90.73%, rgba(43, 150, 211, 0.79) 99.32%);
+	box-shadow: 7px 4px 12px 0px rgba(0, 0, 0, 0.25) inset, 1px -7px 12px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* .comment-area::placeholder {
+    background-color: transparent !important;
+} */
+
+.transparent-input::placeholder {
+	background-color: transparent !important;
+
+}
+
+.transparent-input {
+	border: none;
+}
+
+.b-img {
+	border: none;
+	border-radius: 50%;
+	/* box-shadow: 7px 4px 12px 0px rgba(0, 0, 0, 0.25) inset; */
+	transition: box-shadow 0.3s ease;
+	/* Add a transition for smooth hover effect */
+}
+
+.b-img:hover {
+	box-shadow: 7px 4px 12px 0px rgba(0, 0, 0, 0.5);
+	/* Adjust the shadow color or properties as needed */
+}
+
+.com {
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	opacity: 0.72;
+}
+
+.text-u {
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	opacity: 0.82;
+}
+
+.text-c {
+	color: #000;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	opacity: 0.7;
+}
+
+.blank-line{
+	/* border: none; */
+    border-top: 2px solid rgb(20, 138, 192);
+}
