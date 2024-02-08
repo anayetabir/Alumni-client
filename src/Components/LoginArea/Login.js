@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import reading from '../img/reading.svg'
 import logo3 from '../img/logo3.svg';
 import { useKeenSlider } from "keen-slider/react"
+import homeAnimation1 from '../img/ProfileAnimation1.gif';
+import { useContext } from 'react';
+import { AuthContext } from '../../Context/UserContext';
 
 const carousel = (slider) => {
     const z = 300
@@ -25,6 +28,7 @@ const carousel = (slider) => {
 
 
 const Login = () => {
+    const { user } = useContext(AuthContext);
 
     const navigate = useNavigate();
     const registerClicked = () => {
@@ -90,15 +94,26 @@ const Login = () => {
                             </div>
                         </div>
                         <div className='col-md-6 d-flex align-items-center justify-content-center'  >
-                            <button class="shadow-btn login-btn">
+                            {/* <button class="shadow-btn login-btn">
                                 CSE Alumni Association
-                            </button>
+                            </button> */}
+                            <div class="home-card">
+                                <div class="home-imgbox">
+                                    <div class="home-img">
+                                        <img src={homeAnimation1} alt="" />
+                                    </div>
+                                </div>
+                                <div class="home-details">
+                                    <h2 class="home-title">{user.displayName}</h2>
+                                    <span class="home-caption"><span className='text-black'>ID : </span>2012020191</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
+        </div >
 
     );
 };
