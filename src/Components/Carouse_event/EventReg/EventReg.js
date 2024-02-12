@@ -13,7 +13,7 @@ const EventReg = () => {
 
                 <form >
 
-                    <h1 className=''>Event Regisration Form</h1>
+                    <h1 className='eventReg-head'>Event Regisration Form</h1>
 
 
 
