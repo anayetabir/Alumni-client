@@ -104,7 +104,7 @@ const Login = () => {
                                     </div>
                                 </div>
                                 <div class="home-details">
-                                    <h2 class="home-title">{user.displayName}</h2>
+                                    {/* <h2 class="home-title">{user.displayName}</h2> */}
                                     <span class="home-caption"><span className='text-black'>ID : </span>2012020191</span>
                                 </div>
                             </div>
