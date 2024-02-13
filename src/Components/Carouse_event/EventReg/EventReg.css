@@ -1,4 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .eventReg-head {
     margin-bottom: 50px;
     color: rgb(75, 56, 30);
+}
+
+.black-label {
+    margin-top: 100px;
+}
+
+.top-head {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(204, 204, 204);
+    box-shadow: -2px 0px 33px 0px rgb(0, 0, 0, 0.75);
+    margin: 20px;
+
+}
+
+.black-label {
+    width: 80%;
+}
+
+.black-title-p {
+    font-size: 20px;
+    color: gray;
+
+
+}
+
+.black-title {
+    font-size: 40px;
+}
+
+.prix {
+    margin: 50px 0px;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 4px solid rgb(255, 177, 33);
+    margin-bottom: 5px;
+
+
+
+}
+
+.prix-span {
+    padding-left: 10px;
+}
+
+.crt {
+    color: gray;
+    left: 2px;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    margin-right: 5px;
 }

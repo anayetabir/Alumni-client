@@ -1,7 +1,10 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
+
 import './EventReg.css';
+import Head from '../../Head/Head';
+import Footer from '../../Footer/Footer';
 
 
 const EventReg = () => {
@@ -13,13 +16,50 @@ const EventReg = () => {
 
 
     return (
-        <div className='mt=5 pt-5' >
+        <div  >
 
 
-            <div>
-                <h1>Title:{events.title} </h1>
-                <h3>Description:{events.description} </h3>
+            <Head></Head>
+
+
+            <div className='top-head'>
+                <div className='d-flex align-items-center justify-content-center'>
+                    <div className='black-label  '>
+                        <span className='black-title'><b>{events.title} </b></span>
+
+                        <p className='black-title-p '>{events.description} </p>
+
+                    </div>
+                </div>
+
+                <div className='prix '>
+                    <span className='prix-span'><b>{events.endDate}</b></span>
+                    <div>
+                        <span className='crt'>Regisration Below</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+
+                </div>
             </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
 
 
 
@@ -91,9 +131,13 @@ const EventReg = () => {
                     <button class="btn btn-primary " type="submit">Register Event</button>
                 </form>
             </div>
+            <Footer></Footer>
+
 
         </div>
+
     );
+
 };
 
 export default EventReg;
