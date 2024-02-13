@@ -63,7 +63,9 @@ const CreateEvent = () => {
 
             <div className='mt-5'>
                 <div className='row'>
-                    <div className='col-md-6'><img src={covevent} alt="" className='img-fluid' /></div>
+                    <div className='col-md-6'>
+                        <img src={covevent} alt="" className='img-fluid' />
+                        </div>
                     <div className='col-md-6'>
                         <div>
                             <h4>New Event Create</h4>
