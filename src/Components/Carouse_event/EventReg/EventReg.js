@@ -21,57 +21,44 @@ const EventReg = () => {
 
             <Head></Head>
 
+            <div className='mt-5 pt-5'>
 
-            <div className='top-head'>
-                <div className='d-flex align-items-center justify-content-center'>
-                    <div className='black-label  '>
-                        <span className='black-title'><b>{events.title} </b></span>
+                <div className='top-head'>
+                    <div className='d-flex align-items-center justify-content-center'>
+                        <div className='black-label  '>
+                            <span className='black-title'><b>{events.title} </b></span>
 
-                        <p className='black-title-p '>{events.description} </p>
+                            <p className='black-title-p '>{events.description} </p>
 
-                    </div>
-                </div>
-
-                <div className='prix '>
-                    <span className='prix-span'><b>{events.endDate}</b></span>
-                    <div>
-                        <span className='crt'>Regisration Below</span>
-                        <i class="fa-solid fa-arrow-down"></i>
+                        </div>
                     </div>
 
+                    <div className=' pb-1'>
+                        <div className='prix  '>
+                            <div>
+                                <span className='prix-span'><b><span className='crt'>End :</span> {events.endDate}</b></span>
+                            </div>
+                            <div className='d-flex align-items-center justify-content-center'>
+                                <span className='crt'>Regisration Below</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+
+            <div className='mt-5'>
+                <h1 className='eventReg-head fw-semibold'>Event Regisration Form</h1>
+            </div>
 
 
-
-
-
-
-
-
-            <div className='formfield'>
+            <div className='formfield mb-5'>
 
                 <form >
 
-                    <h1 className='eventReg-head'>Event Regisration Form</h1>
+
 
 
 
