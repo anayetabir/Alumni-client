@@ -80,7 +80,7 @@ const Event = () => {
 
 
     return (
-        <div className='event'>
+        <div className='event '>
             <div className='p-5 m-5 w-100 mx-auto'>
                 <div id='carouselExampleCaptions' className='carousel slide' data-bs-ride='carousel'>
                     <div className='carousel-indicators'>
@@ -101,11 +101,11 @@ const Event = () => {
                     <div className='carousel-inner'>
                         {pairedEvents.map((pair, index) => (
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval='5000'>
-                                <div className='container'>
-                                    <div className='box-container'>
+                                <div className='container d-flex justify-content-center'>
+                                    <div className='box-container '>
                                         {pair.map((event) => (
 
-                                            <div className='box' key={event._id}>
+                                            <div className='box ' key={event._id}>
 
                                                 <div className='image '>
                                                     <img src={sohidminar3} className='img1 ' alt='...' />

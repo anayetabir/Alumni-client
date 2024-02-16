@@ -65,12 +65,12 @@ const CreateEvent = () => {
                 <div className='row'>
                     <div className='col-md-6'>
                         <img src={covevent} alt="" className='img-fluid' />
-                        </div>
+                    </div>
                     <div className='col-md-6'>
                         <div>
                             <h4>New Event Create</h4>
                         </div>
-                        <div className='formfield'>
+                        <div className='formfield mb-5'>
 
                             <form onSubmit={handleCreateEvent}>
 
