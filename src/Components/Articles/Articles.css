@@ -124,15 +124,15 @@ body {
 
 
 /* New Section */
- 
- 
+
+
 form {
     width: 90%;
- 
+
 }
- 
- 
- 
+
+
+
 .article-btn {
     padding: 10px 0;
     color: var(--gray-110);
@@ -143,10 +143,10 @@ form {
     cursor: pointer;
     margin-top: 20px;
     font-weight: 300;
- 
+
 }
- 
- 
+
+
 .upperCaseHeader {
     color: var(--gray-110);
     font-size: 12px;
@@ -156,8 +156,8 @@ form {
     text-transform: uppercase;
     margin-top: -20px;
 }
- 
- 
+
+
 .left-part {
     align-items: center;
     background: transparent;
@@ -165,26 +165,39 @@ form {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #f0f0f0;
- 
+
 }
- 
- 
+
+
 .input-Area {
     margin-left: 0;
 }
- 
+
 .text-area {
     height: 100px;
 }
- 
+
 .form-h5 {
     color: var(--gray-110);
     font-weight: 700;
     margin-bottom: 40PX;
 }
- 
+
 .title {
     margin-bottom: 50px;
 }
- 
+
 /* New Part End */
+
+
+.Up-h5 {
+    color: var(--gray-110);
+    font-weight: 700;
+    margin-top: 30px;
+
+}
+
+.Up-title {
+    margin-bottom: 50px;
+
+}
