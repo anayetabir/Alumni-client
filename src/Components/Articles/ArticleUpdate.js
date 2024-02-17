@@ -40,8 +40,8 @@ const ArticleUpdate = () => {
 
     return (
         <div>
-            <h1 className='Up-h5'>Update Article</h1>
-            <h2 className="Up-title">Title:{article.title}</h2>
+            <h1 className='Up-h5'>Update: {article.title}</h1>
+            {/* <h2 className="Up-title">Title:</h2> */}
             <div className='m-5 p-5 justify-content-center'>
                 <div className="row">
 
@@ -54,7 +54,7 @@ const ArticleUpdate = () => {
                             <form onSubmit={handleUpdateArticle}>
 
 
-                                <h5 className='form-h5'>Update Articles</h5>
+                                <h5 className='form-h5'>Update: {article.title}</h5>
 
 
                                 <div className="form-floating title">
