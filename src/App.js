@@ -24,6 +24,7 @@ import ProfileUpdate from './Components/Profile/ProfileUpdate';
 import JobUpdates from './Components/Job/JobUpdates';
 import UpdateEvent from './Components/Carouse_event/UpdateEvent';
 import EventReg from './Components/Carouse_event/EventReg/EventReg';
+import ArticleRead from './Components/Articles/ReadMore/ArticleRead';
 
 
 
@@ -133,6 +134,11 @@ function App() {
       path: "/readeventdetails/:id",
       element: <EventReg></EventReg>,
       loader: ({ params }) => fetch(`http://localhost:5000/event/${params.id}`)
+    },
+    {
+      path: "/readarticledetails/:id",
+      element: <ArticleRead></ArticleRead>,
+      loader: ({ params }) => fetch(`http://localhost:5000/article/${params.id}`)
     },
   ])
 

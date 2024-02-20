@@ -68,6 +68,11 @@ const Articles = () => {
 
     }
 
+    const HandleArticleRead = _id => {
+        console.log(_id);
+    }
+
+
     return (
         <div>
             <Head></Head>
@@ -132,7 +137,11 @@ const Articles = () => {
                                     <div className='blog-title'>{article.title}</div>
                                     <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{article.details}</p>
                                     {/* <a href="" onClick={()=> handleReadMode(article._id)}>Read More</a> */}
-                                    <button onClick={() => handleReadMode(article._id)} className='nextPage mx-auto'>Read More</button>
+                                    {/* <button onClick={() => handleReadMode(article._id)} className='nextPage mx-auto'>Read More</button> */}
+
+                                    <Link className='btn' to={`/readarticledetails/${article._id}`} onClick={() => HandleArticleRead(article._id)}>
+                                        Read More
+                                    </Link>
                                 </div>
                             </div>
                         </div>

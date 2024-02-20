@@ -20,9 +20,9 @@ const Home = () => {
             <Head></Head>
             <Login></Login>
             <Event></Event>
+            <HomeArticle></HomeArticle>
             <Whyjoinus></Whyjoinus>
             <HomeStories></HomeStories>
-            <HomeArticle></HomeArticle>
             <HomeJobs></HomeJobs>
             <Footer></Footer>
             {/* <Head></Head>
