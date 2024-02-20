@@ -140,7 +140,7 @@ const Articles = () => {
                                     {/* <button onClick={() => handleReadMode(article._id)} className='nextPage mx-auto'>Read More</button> */}
 
                                     <Link className='btn' to={`/readarticledetails/${article._id}`} onClick={() => HandleArticleRead(article._id)}>
-                                        Read More
+                                        <button className="btn btn-outline-danger">Read More</button>
                                     </Link>
                                 </div>
                             </div>
