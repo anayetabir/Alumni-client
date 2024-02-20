@@ -103,10 +103,14 @@ const Login = () => {
                                         <img src={homeAnimation1} alt="" />
                                     </div>
                                 </div>
-                                <div class="home-details">
-                                    <h2 class="home-title">{user.displayName}</h2>
-                                    <span class="home-caption"><span className='text-black'>ID : </span>2012020191</span>
-                                </div>
+                                {(user) &&
+                                    <>
+                                        <div class="home-details">
+                                            <h2 class="home-title">{user.displayName}</h2>
+                                            <span class="home-caption"><span className='text-black'>ID : </span>2012020191</span>
+                                        </div>
+
+                                    </>}
                             </div>
                         </div>
                     </div>
