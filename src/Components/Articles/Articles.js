@@ -17,7 +17,7 @@ const Articles = () => {
 
     const [articles, setArticles] = useState(article);
 
-    const handleReadMode = _id => { console.log(_id) }
+    // const handleReadMode = _id => { console.log(_id) }
 
 
     const [userData, setUserData] = useState([]);

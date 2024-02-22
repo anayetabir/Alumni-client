@@ -131,13 +131,15 @@ const Event = () => {
                                                             <>
                                                                 <div>
                                                                     <span className='deleteBtn'>
-                                                                        <i onClick={() => handleDelete(event._id)} className='fa-solid fa-trash'></i>
+                                                                        <button className='btn btn-outline-light'>
+                                                                            <i onClick={() => handleDelete(event._id)} className='fa-solid fa-trash dark'></i>
+                                                                        </button>
                                                                     </span>
 
                                                                     <Link to={`/updateEvent/${event._id}`}>
 
-                                                                        <button className='evn-btn' >
-                                                                            <i class="fa-regular fa-pen-to-square"></i>
+                                                                        <button className='evn-btn btn btn-outline-light' >
+                                                                            <i class="fa-regular fa-pen-to-square dark"></i>
                                                                         </button>
                                                                     </Link>
 

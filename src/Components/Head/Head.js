@@ -44,10 +44,10 @@ const Head = () => {
                 </button>
                 <div className="collapse navbar-collapse " id="navbarNav ">
                     <ul className="navbar-nav">
-                        <li className="nav-item ">
-                            {/* <a className="nav-link" href="#">Businesses</a> */}
+                        {/* <li className="nav-item ">
+                           
                             <NavLink to={'/businesses'} className="nav-link" activeClassName="active">Businesses</NavLink>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             {/* <a className="nav-link" href="#">Job-Opportunity</a> */}
                             <NavLink to={'/job'} className="nav-link" activeClassName="active">Job-Opportunity</NavLink>
@@ -58,7 +58,7 @@ const Head = () => {
                         </li>
                         <li className="nav-item">
                             {/* <a className="nav-link" href="/news">News</a> */}
-                            <NavLink to={'/news'} className="nav-link" activeClassName="active">News</NavLink>
+                            <NavLink to={'/news'} className="nav-link" activeClassName="active">Forums</NavLink>
                         </li>
                         <li className="nav-item">
                             {/* <a className="nav-link" href="#">Stories</a> */}
