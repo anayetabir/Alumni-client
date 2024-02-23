@@ -3,7 +3,10 @@ import sohidminar3 from '../img/loginarea.png';
 import leading from '../img/shohidMinar3.jpg';
 import './Login.css'
 import { useNavigate } from 'react-router-dom';
-import reading from '../img/reading.svg'
+import reading from '../img/reading.svg';
+import picnic from '../img/picnic.jpg';
+import kallolDas from '../img/KallolDas.jpg';
+import picnicDetails from '../img/picnicDetails.jpg';
 import logo3 from '../img/logo3.svg';
 import { useKeenSlider } from "keen-slider/react"
 import homeAnimation1 from '../img/ProfileAnimation1.gif';
@@ -86,9 +89,9 @@ const Login = () => {
                                     <div className="carousel keen-slider" ref={sliderRef}>
                                         <div className="carousel__cell number-slide1 "> <img src={sohidminar3} className='img7' alt='...' /></div>
                                         <div className="carousel__cell number-slide2"><img src={leading} className='img7' alt='...' /></div>
-                                        <div className="carousel__cell number-slide3">3</div>
-                                        <div className="carousel__cell number-slide4">4</div>
-                                        <div className="carousel__cell number-slide5">5</div>
+                                        <div className="carousel__cell number-slide3"><img src={picnic} className='img7' alt='...' /></div>
+                                        <div className="carousel__cell number-slide4"><img src={kallolDas} className='img7' alt='...' /></div>
+                                        <div className="carousel__cell number-slide5"><img src={picnicDetails} className='img7' alt='...' /></div>
                                     </div>
                                 </div>
                             </div>

@@ -14,6 +14,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Autoplay } from 'swiper/modules';
 
+
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 

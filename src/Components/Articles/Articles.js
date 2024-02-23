@@ -4,6 +4,7 @@ import error from '../img/error.gif';
 import Head from '../Head/Head';
 import Footer from '../Footer/Footer';
 import news from '../img/loginarea.png';
+import picnic from '../img/picnic.jpg';
 import ArticleCreate from './ArticleCreate';
 import { Link, useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -99,7 +100,7 @@ const Articles = () => {
                             <div className="blog-box shadow">
                                 {/* image */}
                                 <div className="blog-img">
-                                    <img src={news} alt="" />
+                                    <img src={picnic} alt="" />
                                 </div>
                                 {/* menu */}
                                 {(user) ? <>
