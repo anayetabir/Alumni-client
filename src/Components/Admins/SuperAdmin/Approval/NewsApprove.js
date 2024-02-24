@@ -106,7 +106,7 @@ const NewsApprove = () => {
                     <div className=" table-responsive">
                         <table className="table caption-top table-striped table-primary table-bordered border-secondary table-hover bg-shadow">
                         
-                            <caption className='fs-2 fw-bold'>News</caption>
+                            <caption className='fs-2 fw-bold'>Forums</caption>
                             <thead className="table-dark">
                                 <tr>
                                     <th>Name</th>

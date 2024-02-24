@@ -5,6 +5,7 @@ import './Login.css'
 import { useNavigate } from 'react-router-dom';
 import reading from '../img/reading.svg';
 import picnic from '../img/picnic.jpg';
+import AlumniMetting from '../img/AkunmiMeeting.jpg';
 import kallolDas from '../img/KallolDas.jpg';
 import picnicDetails from '../img/picnicDetails.jpg';
 import logo3 from '../img/logo3.svg';
@@ -87,7 +88,7 @@ const Login = () => {
                             <div className="wrapper-x homeStories1">
                                 <div className="scene">
                                     <div className="carousel keen-slider" ref={sliderRef}>
-                                        <div className="carousel__cell number-slide1 "> <img src={sohidminar3} className='img7' alt='...' /></div>
+                                        <div className="carousel__cell number-slide1 "> <img src={AlumniMetting} className='img7' alt='...' /></div>
                                         <div className="carousel__cell number-slide2"><img src={leading} className='img7' alt='...' /></div>
                                         <div className="carousel__cell number-slide3"><img src={picnic} className='img7' alt='...' /></div>
                                         <div className="carousel__cell number-slide4"><img src={kallolDas} className='img7' alt='...' /></div>

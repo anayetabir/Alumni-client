@@ -135,7 +135,7 @@ const Articles = () => {
                                 {/*Text */}
                                 <div className="blog-text">
                                     <span>{article.createdAt}</span>
-                                    <div className='blog-title'>{article.title}</div>
+                                    <div className='blog-title'><b>{article.title}</b></div>
                                     <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{article.details}</p>
                                     {/* <a href="" onClick={()=> handleReadMode(article._id)}>Read More</a> */}
                                     {/* <button onClick={() => handleReadMode(article._id)} className='nextPage mx-auto'>Read More</button> */}

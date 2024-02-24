@@ -3,6 +3,7 @@ import './Committee.css';
 import Head from '../Head/Head';
 import Footer from '../Footer/Footer';
 import abir from '../img/abir3.png';
+import prbSir from '../img/prbSir.png';
 
 
 
@@ -19,117 +20,157 @@ const Committee = () => {
 
                     <div className="com">
                         <div className="text-wrapper">Executive Committee</div>
-                        <div className="year">2023-Present</div>
+                        <div className="year">2023 - Present</div>
                     </div>
 
                     <div className='d-flex justify-content-center'>
                         <div className='deg-back'>
                             <div className='row g-4'>
                                 <div className='col-md-4 col-sm-6'>
-                                    <div class="card h-100 cus-card"> 
+                                    <div class="card h-100 cus-card">
+
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='col-md-4 col-sm-6'>
+                                    <div class="card h-100 cus-card">
+
+                                        <div class="card-body text-start">
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
                                         <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='col-md-4 col-sm-6'>
-                                    <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
-                                            <h5 class="card-title">Name</h5>
-                                            <p class="card-text">Deg</p>
-                                            <p class="card-text">Email</p>
+                                            <div >
+                                                <img src={prbSir} className='comm_img' alt="" />
+                                            </div>
+                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                            <p class="card-text ">President</p>
+                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
                                         </div>
                                     </div>
                                 </div>
@@ -138,7 +179,7 @@ const Committee = () => {
                         </div>
                     </div>
 
-                    
+
 
                 </div>
             </div>

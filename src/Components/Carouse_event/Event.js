@@ -5,6 +5,7 @@ import './Event.css';
 import loginarea from '../img/loginarea.png';
 import sohidminar3 from '../img/shohidMinar3.jpg';
 import cevent from '../img/cevent.svg';
+import picnic from '../img/picnic.jpg';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -108,10 +109,10 @@ const Event = () => {
                                             <div className='box ' key={event._id}>
 
                                                 <div className='image '>
-                                                    <img src={sohidminar3} className='img1 ' alt='...' />
+                                                    <img src={picnic} className='img1 ' alt='...' />
                                                 </div>
                                                 <div className='content transition'>
-                                                    <h3>{event.title}</h3>
+                                                    <h3><b>{event.title}</b></h3>
                                                     <p>{event.description}</p>
                                                     <Link className='btn' to={`/readeventdetails/${event._id}`} onClick={() => HandleEventRead(event._id)}>
                                                         Register
