@@ -29,148 +29,169 @@ const Committee = () => {
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
 
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='col-md-4 col-sm-6'>
                                     <div class="card h-100 cus-card">
-                                        <div class="card-body text-start">
+                                        <div class="card-body text-start d-flex align-items-center justify-content-center">
                                             <div >
                                                 <img src={prbSir} className='comm_img' alt="" />
                                             </div>
-                                            <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
-                                            <p class="card-text ">President</p>
-                                            <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            <div>
+                                                <h5 class="card-title mt-2"><b>Bhattacharjee Prithwiraj </b></h5>
+                                                <p class="card-text">President</p>
+                                                <p class="card-text">prithwiraj_cse@lus.ac.bd</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

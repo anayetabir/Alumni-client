@@ -109,7 +109,7 @@ const Event = () => {
                                             <div className='box ' key={event._id}>
 
                                                 <div className='image '>
-                                                    <img src={picnic} className='img1 ' alt='...' />
+                                                    <img src={event.photoUrl} className='img1 ' alt='...' />
                                                 </div>
                                                 <div className='content transition'>
                                                     <h3><b>{event.title}</b></h3>

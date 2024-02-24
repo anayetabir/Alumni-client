@@ -18,7 +18,7 @@ const CreateEvent = () => {
         const form = event.target;
 
         const title = form.title.value;
-        const type = form.type.value;
+        const photoUrl = form.photoUrl.value;
         const description = form.description.value;
         const startDate = form.startDate.value;
         const endDate = form.endDate.value;
@@ -26,7 +26,7 @@ const CreateEvent = () => {
         const uid = user.uid;
         const approval = 'WaitingForApprove';
 
-        const newEvent = { title, type, description, startDate, endDate, createdAt, uid, approval }
+        const newEvent = { title, photoUrl, description, startDate, endDate, createdAt, uid, approval }
 
         console.log(newEvent);
 
@@ -80,9 +80,10 @@ const CreateEvent = () => {
                                 </div>
 
                                 <div className="form-floating mb-3">
-                                    <input type="text" className="form-control" id="floatingTextareaDisabled" name="type" placeholder='Event Type' />
-                                    <label htmlFor="floatingTextareaDisabled">Event Type</label>
+                                    <input type="text" className="form-control" id="floatingTextareaDisabled" name="photoUrl" placeholder='Photo URl' />
+                                    <label htmlFor="floatingTextareaDisabled">Photo URl</label>
                                 </div>
+
 
                                 <div className="form-floating mb-3">
                                     <input type="text" className="form-control" id="floatingTextarea2Disabled" name="description" placeholder='Description' />

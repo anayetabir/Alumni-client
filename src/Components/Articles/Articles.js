@@ -100,7 +100,7 @@ const Articles = () => {
                             <div className="blog-box shadow">
                                 {/* image */}
                                 <div className="blog-img">
-                                    <img src={picnic} alt="" />
+                                    <img src={article.photoUrl} alt="" />
                                 </div>
                                 {/* menu */}
                                 {(user) ? <>

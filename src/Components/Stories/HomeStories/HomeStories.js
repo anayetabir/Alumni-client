@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import sohidminar3 from '../../img/shohidMinar3.jpg';
 
 import './HomeStories.css';
@@ -19,6 +19,13 @@ import { Autoplay } from 'swiper/modules';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const HomeStories = () => {
+
+    const [stories, setStories] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/story')
+            .then(res => res.json())
+            .then(data => setStories(data))
+    }, []);
 
 
 
@@ -48,23 +55,17 @@ const HomeStories = () => {
                     }}
                     modules={[EffectCoverflow, Pagination, Autoplay]}
                     className="mySwiper"
+
                 >
-                    <SwiperSlide className='' style={{ width: '500px' }}>
-                        <img src={sohidminar3} className='img-fluid' style={{ width: '500px' }} />
-                        <h2>Abir</h2>
-                    </SwiperSlide>
-                    <SwiperSlide className='' style={{ width: '500px' }}>
-                        <img src={sohidminar3} className='img-fluid' style={{ width: '500px' }} />
-                        <h2>Abir</h2>
-                    </SwiperSlide>
-                    <SwiperSlide className='' style={{ width: '500px' }}>
-                        <img src={sohidminar3} className='img-fluid' style={{ width: '500px' }} />
-                        <h2>Abir</h2>
-                    </SwiperSlide>
-                    <SwiperSlide className='' style={{ width: '500px' }}>
-                        <img src={sohidminar3} className='img-fluid' style={{ width: '500px' }} />
-                        <h2>Abir</h2>
-                    </SwiperSlide>
+                    {stories.map(story => (
+                        <SwiperSlide key={story._id} className='' style={{ width: '500px', height: '550px' }}>
+                            <img src={story.photo} className='img-fluid' style={{ width: '500px', height: '500px' }} />
+                            <h2>{story.title}</h2>
+                        </SwiperSlide>
+
+                    ))}
+
+
                 </Swiper>
             </div>
 

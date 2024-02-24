@@ -13,12 +13,13 @@ const ArticleCreate = () => {
         const form = event.target;
         const title = form.title.value;
         const details = form.details.value;
+        const photoUrl = form.photoUrl.value;
         const name = user.displayName;
         const uid = user.uid;
         const createdAt = time.toLocaleString();
         const approval = 'WaitingForApprove';
 
-        const newArticle = { title, details, name, uid, approval, createdAt };
+        const newArticle = { title, details,photoUrl, name, uid, approval, createdAt };
 
         form.reset();
 
@@ -80,6 +81,11 @@ const ArticleCreate = () => {
                             <div className="form-floating">
                                 <input className="form-control" name="details" cols="5" rows="5" />
                                 <label className='upperCaseHeader' htmlFor="floatingTextarea">Details</label>
+                            </div>
+                            <div className="form-floating ">
+                                <input className="form-control" type="text" name="photoUrl" />
+                                <label className='upperCaseHeader' htmlFor="floatingTextarea">Photo URL</label>
+
                             </div>
 
                             <div>

@@ -1,0 +1,12 @@
+.story-img {
+    width: 500px;
+    height: 250px;
+
+}
+
+.story-img img {
+    width: 500px;
+    height: 400px;
+    object-fit: fill;
+    object-position: center;
+}
