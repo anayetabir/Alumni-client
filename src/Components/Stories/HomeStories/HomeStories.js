@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import sohidminar3 from '../../img/shohidMinar3.jpg';
+
 
 import './HomeStories.css';
 

@@ -132,8 +132,8 @@ const Event = () => {
                                                             <>
                                                                 <div>
                                                                     <span className='deleteBtn'>
-                                                                        <button className='btn btn-outline-light'>
-                                                                            <i onClick={() => handleDelete(event._id)} className='fa-solid fa-trash dark'></i>
+                                                                        <button onClick={() => handleDelete(event._id)} className='btn btn-outline-light'>
+                                                                            <i className='fa-solid fa-trash dark'></i>
                                                                         </button>
                                                                     </span>
 

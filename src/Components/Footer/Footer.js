@@ -15,7 +15,10 @@ const Footer = () => {
                         <h2>About  <div className='underline1'><span className='ft-span'></span></div></h2>
                         <p className='text-white'>
 
-                            Established in 2001 by Ragib Ali, Leading University initially operated from rented spaces until its permanent campus opened in 2016. It faced controversy for not convening essential meetings from 2013 to 2014. In 2015, students protested against VAT on education by blocking roads. By 2018, it had four faculties with 4,692 students, mainly in business administration and engineering. In 2021, Qazi Azizul Mowla became vice-chancellor, but allegations of financial irregularities emerged, leading to a dispute between him and the board of trustees in 2023, prompting an investigation by the University Grants Commission.
+                            We are the official alumni association for the Department of Computer Science and
+                            Engineering, Leading University. The association was established in May 2023 with a mission
+                            to create a platform that will provide networking opportunities for ex-students. The association
+                            started its journey by establishing the first convenor committee on 8 July 2023.
                         </p>
                         <div className='social-media'>
                             <ul>
