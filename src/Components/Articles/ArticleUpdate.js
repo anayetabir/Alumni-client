@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import articleimg from '../img/articleimg.svg';
 import Swal from 'sweetalert2';
 
 const ArticleUpdate = () => {
@@ -39,21 +40,21 @@ const ArticleUpdate = () => {
 
     return (
         <div>
-            <h1>Update Article</h1>
-            <h2>Title:{article.title}</h2>
-            <div className='m-5 p-5'>
+            <h1 className='Up-h5'>Update: {article.title}</h1>
+            {/* <h2 className="Up-title">Title:</h2> */}
+            <div className='m-5 p-5 justify-content-center'>
                 <div className="row">
 
-                    {/* <div className="col-md-6">
+                    <div className="col-md-6">
                         <img src={articleimg} alt="" className='img-fluid' />
-                    </div> */}
+                    </div>
                     <div className="col-md-6">
                         {/* 30% width column */}
                         <div className='left-part'>
                             <form onSubmit={handleUpdateArticle}>
 
 
-                                <h5 className='form-h5'>Create Articles</h5>
+                                <h5 className='form-h5'>Update: {article.title}</h5>
 
 
                                 <div className="form-floating title">

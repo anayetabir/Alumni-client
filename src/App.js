@@ -21,7 +21,10 @@ import ArticleUpdate from './Components/Articles/ArticleUpdate';
 import NewsUpdate from './Components/News/NewsUpdate';
 import ChangeRole from './Components/Admins/SuperAdmin/ChangeRole';
 import ProfileUpdate from './Components/Profile/ProfileUpdate';
+import JobUpdates from './Components/Job/JobUpdates';
 import UpdateEvent from './Components/Carouse_event/UpdateEvent';
+import EventReg from './Components/Carouse_event/EventReg/EventReg';
+import ArticleRead from './Components/Articles/ReadMore/ArticleRead';
 
 
 
@@ -35,8 +38,7 @@ function App() {
     },
     {
       path: "/",
-      element: <Home />,
-
+      element: <Home />
     },
     {
       path: "/registration",
@@ -58,8 +60,9 @@ function App() {
     },
 
     {
-      path: "/stories",
-      element: <Stories />
+      path: "/story",
+      element: <PrivateRoute><Stories /></PrivateRoute>,
+      loader: () => fetch('http://localhost:5000/story')
     },
     {
       path: "/businesses",
@@ -67,7 +70,14 @@ function App() {
     },
     {
       path: "/job",
-      element: <Job />
+      element: <Job />,
+      loader: () => fetch('http://localhost:5000/job')
+    },
+
+    {
+      path: '/JobUpdates/:id',
+      element: <JobUpdates />,
+      loader: ({ params }) => fetch(`http://localhost:5000/job/${params.id}`)
     },
     {
       path: "/committee",
@@ -119,6 +129,16 @@ function App() {
       path: "/updateEvent/:id",
       element: <UpdateEvent></UpdateEvent>,
       loader: ({ params }) => fetch(`http://localhost:5000/event/${params.id}`)
+    },
+    {
+      path: "/readeventdetails/:id",
+      element: <EventReg></EventReg>,
+      loader: ({ params }) => fetch(`http://localhost:5000/event/${params.id}`)
+    },
+    {
+      path: "/readarticledetails/:id",
+      element: <ArticleRead></ArticleRead>,
+      loader: ({ params }) => fetch(`http://localhost:5000/article/${params.id}`)
     },
   ])
 

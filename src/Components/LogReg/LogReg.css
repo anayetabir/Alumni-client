@@ -14,12 +14,12 @@
     width: 100%;
     background-color: #f5f5f9;
     padding-top: 2%;
-    
+
 }
 
 
 
-.container{
+.container {
     width: 80%;
     margin: 3% auto;
     display: flex;
@@ -161,7 +161,7 @@
     color: #84848d;
 }
 
-input {
+.input-logreg {
     border: none;
     outline: none;
     background: inherit;
@@ -180,13 +180,13 @@ input {
 ::-webkit-datetime-edit-month-field,
 ::-webkit-datetime-edit-day-field,
 ::-webkit-datetime-edit-year-field,
-input::placeholder {
+.input-logreg::placeholder {
     background-color: #fff;
     color: #84848d;
 
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+.input-logreg[type="date"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);
     opacity: 1;
     display: block;
@@ -251,7 +251,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 
-input[type="radio"] {
+.input-logreg[type="radio"] {
     accent-color: #333;
     margin-right: 6%;
 }
@@ -432,7 +432,7 @@ input[type="radio"] {
     }
 
     .text-fields,
-    input {
+    .input-logreg {
         width: 100%;
         margin: 5% 0;
     }
@@ -446,5 +446,5 @@ input[type="radio"] {
         width: 100px;
         font-size: 0.8rem;
     }
-    
+
 }

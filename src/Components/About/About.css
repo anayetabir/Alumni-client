@@ -38,8 +38,8 @@
     height: 85%;
 }
 
-.team_member:hover{
-    border-color: #2a7be4!important;
+.team_member:hover {
+    border-color: #2a7be4 !important;
     border: 2px solid;
     box-shadow: 10px 10px 15px gray;
 }
@@ -81,3 +81,10 @@
     box-shadow: 10px 10px 15px gray;
     border-radius: 50%;
 } */
+
+
+.about-bg {
+    background-color: #EFF0FF;
+    height: 100%;
+    width: 100%;
+}

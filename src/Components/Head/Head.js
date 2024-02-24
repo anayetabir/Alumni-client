@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './Head.css'
 import profile from '../img/profile.svg'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Context/UserContext';
 import { db } from '../../FIrebase/firebase.config';
 import { doc, getDoc } from 'firebase/firestore';
@@ -10,7 +10,7 @@ import logo6 from '../img/logo6.svg';
 const Head = () => {
 
 
-    
+
     const { user, logOut } = useContext(AuthContext);
     // console.log(user);
 
@@ -29,9 +29,11 @@ const Head = () => {
     }, [])
 
 
+
+
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark nb">
+        <div >
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark nb ">
                 {/* <a className="navbar-brand" href="#">CSE-AA-LU</a> */}
                 <Link to={'/'} className="navbar-brand mx-3 fs-5">
                     <img src={logo6} className='img-fluid' alt='' />
@@ -40,39 +42,39 @@ const Head = () => {
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
+                <div className="collapse navbar-collapse " id="navbarNav ">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                            {/* <a className="nav-link" href="#">Businesses</a> */}
-                            <Link to={'/businesses'} className="nav-link">Businesses</Link>
-                        </li>
+                        {/* <li className="nav-item ">
+                           
+                            <NavLink to={'/businesses'} className="nav-link" activeClassName="active">Businesses</NavLink>
+                        </li> */}
                         <li className="nav-item">
                             {/* <a className="nav-link" href="#">Job-Opportunity</a> */}
-                            <Link to={'/job'} className="nav-link">Job-Opportunity</Link>
+                            <NavLink to={'/job'} className="nav-link" activeClassName="active">Job-Opportunity</NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item ">
                             {/* <a className="nav-link" href="#">Articles</a> */}
-                            <Link to={'/articles'} className="nav-link">Articles</Link>
+                            <NavLink to={'/articles'} className="nav-link" activeClassName="active">Articles</NavLink>
                         </li>
                         <li className="nav-item">
                             {/* <a className="nav-link" href="/news">News</a> */}
-                            <Link to={'/news'} className="nav-link">News</Link>
+                            <NavLink to={'/news'} className="nav-link" activeClassName="active">Forums</NavLink>
                         </li>
                         <li className="nav-item">
                             {/* <a className="nav-link" href="#">Stories</a> */}
-                            <Link to={'/stories'} className="nav-link">Stories</Link>
+                            <NavLink to={'/story'} className="nav-link" activeClassName="active">Stories</NavLink>
                         </li>
                         <li className="nav-item">
                             {/* <a className="nav-link" href="#">Committee</a> */}
-                            <Link to={'/committee'} className="nav-link">Committee</Link>
+                            <NavLink to={'/committee'} className="nav-link" activeClassName="active">Committee</NavLink>
                         </li>
                         <li className="nav-item">
                             {/* <a className="nav-link" href="#">About</a> */}
-                            <Link to={'/about'} className="nav-link">About</Link>
+                            <NavLink to={'/about'} className="nav-link" activeClassName="active">About</NavLink>
                         </li>
                         <li className="nav-item">
                             {/* <a className="nav-link" href="#">Contact</a> */}
-                            <Link to={'/contact'} className="nav-link">Contact</Link>
+                            <NavLink to={'/contact'} className="nav-link" activeClassName="active">Contact</NavLink>
                         </li>
                         {/* {user && <li className="nav-item">
                            
@@ -117,7 +119,7 @@ const Head = () => {
                                                     )
                                                 } */}
                                                 {
-                                                    userData.find(userDoc => userDoc.uid === user.uid && userDoc.role === 'superAdmin') && (
+                                                    userData.find(userDoc => userDoc.uid === user.uid && (userDoc.role === 'superAdmin' || userDoc.role === 'admin')) && (
                                                         <>
                                                             <Link to={'/superadmin'} className="dropdown-item">Admin Dashboard</Link>
                                                             <div role="separator" className="dropdown-divider"></div>

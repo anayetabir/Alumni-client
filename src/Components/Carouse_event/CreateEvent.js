@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Head from '../Head/Head';
 import Footer from '../Footer/Footer';
 import covevent from '../img/covevent.svg';
 import Swal from 'sweetalert2'
+import { AuthContext } from '../../Context/UserContext';
 
 
 const CreateEvent = () => {
 
+    const time = new Date();
+    const { user } = useContext(AuthContext);
 
     const handleCreateEvent = event => {
 
@@ -19,8 +22,11 @@ const CreateEvent = () => {
         const description = form.description.value;
         const startDate = form.startDate.value;
         const endDate = form.endDate.value;
+        const createdAt = time.toLocaleString();
+        const uid = user.uid;
+        const approval = 'WaitingForApprove';
 
-        const newEvent = { title, type, description, startDate, endDate }
+        const newEvent = { title, type, description, startDate, endDate, createdAt, uid, approval }
 
         console.log(newEvent);
 
@@ -57,12 +63,14 @@ const CreateEvent = () => {
 
             <div className='mt-5'>
                 <div className='row'>
-                    <div className='col-md-6'><img src={covevent} alt="" className='img-fluid' /></div>
+                    <div className='col-md-6'>
+                        <img src={covevent} alt="" className='img-fluid' />
+                    </div>
                     <div className='col-md-6'>
                         <div>
                             <h4>New Event Create</h4>
                         </div>
-                        <div className='formfield'>
+                        <div className='formfield mb-5'>
 
                             <form onSubmit={handleCreateEvent}>
 

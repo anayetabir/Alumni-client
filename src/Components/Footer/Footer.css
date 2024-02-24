@@ -157,7 +157,7 @@ footer:hover .footImg {
 }
 
 
-.underline1 {
+/* .underline1 {
     width: 100%;
     height: 2px;
     background: #767676;
@@ -165,12 +165,11 @@ footer:hover .footImg {
     position: absolute;
     top: 15;
     margin-top: 10px;
-    /* bottom: 0;
-    left: 0; */
+    
 
-}
+} */
 
-.underline1 .ft-span {
+/* .underline1 .ft-span {
     width: 10px;
     height: 100%;
     background: #fff;
@@ -179,17 +178,17 @@ footer:hover .footImg {
     top: 0;
     left: 10px;
     animation: moving 2s linear infinite;
-}
+} */
 
-@keyframes moving {
+/* @keyframes moving {
     0% {
         left: -20px;
     }
 
     100% {
-        left: 100%;
+        left: 100%
     }
-}
+} */
 
 
 @media (max-height: 480px) {

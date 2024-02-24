@@ -129,11 +129,11 @@ const Login = () => {
                         <div className="login-form-contents">
                             <div className="text-fields email">
                                 <label htmlFor="email"><i className='bx bx-envelope'></i></label>
-                                <input type="email" name="email" id="email" ref={emailRef} placeholder='Enter Your Email ID ' />
+                                <input className='input-logreg' type="email" name="email" id="email" ref={emailRef} placeholder='Enter Your Email ID ' />
                             </div>
                             <div className="text-fields password">
                                 <label htmlFor="password"><i className='bx bx-lock' ></i></label>
-                                <input type="password" name="password" id="password" placeholder='Enter Your Password' />
+                                <input className='input-logreg' type="password" name="password" id="password" placeholder='Enter Your Password' />
                             </div>
                             <p><small>Forget Password? Please<button className='btn btn-link' onClick={handleResetPass}>Reset Password</button></small></p>
                             <input type="submit" value="login" className="nextPage" />

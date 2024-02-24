@@ -22,7 +22,7 @@ const ProfileUpdate = () => {
         const blood = form.blood.value;
         const city = form.city.value;
         const role = form.role.value;
-        const update = { name, batch, phone, gender, blood, city, role};
+        const update = { name, batch, phone, gender, blood, city, role };
 
 
         fetch(`http://localhost:5000/user/${currentUser._id}`, {
@@ -46,7 +46,7 @@ const ProfileUpdate = () => {
                 }
             })
 
-            
+
 
 
 
@@ -59,8 +59,10 @@ const ProfileUpdate = () => {
 
 
         <div>
-            profile update korte ashchi!!!
-            <div>
+            <div className='fw-bold fs-2 text-secondary m-5'>
+                Update Information!
+            </div>
+            <div className='d-flex justify-content-center'>
                 <form onSubmit={updateUser}>
 
                     <div className="form-floating mb-3">
@@ -96,7 +98,7 @@ const ProfileUpdate = () => {
                         <label htmlFor="floatingPassword">Role</label>
                     </div>
 
-                    <button type="submit" className="nextPage">Update Profile</button>
+                    <button type="submit" className="stories-btn">Update Profile</button>
 
                 </form>
             </div>

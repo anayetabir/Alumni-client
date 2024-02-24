@@ -1,17 +1,37 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import articleimg from '../img/articleimg.svg';
 import './Articles.css';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../../Context/UserContext';
 
 const ArticleCreate = () => {
 
+    const { user } = useContext(AuthContext);
+    const time = new Date();
     const handleAddArticle = event => {
         event.preventDefault();
         const form = event.target;
         const title = form.title.value;
         const details = form.details.value;
+        const name = user.displayName;
+        const uid = user.uid;
+        const createdAt = time.toLocaleString();
+        const approval = 'WaitingForApprove';
 
-        const newArticle = { title, details };
+        const newArticle = { title, details, name, uid, approval, createdAt };
+
+        form.reset();
+
+        if (!title.trim() || !details.trim()) {
+            // If post value is empty or contains only whitespace
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please write something before submitting.',
+                icon: 'error',
+                confirmButtonText: 'Ok'
+            });
+            return;
+        }
 
         fetch('http://localhost:5000/article', {
             method: 'POST',
@@ -30,10 +50,9 @@ const ArticleCreate = () => {
                         icon: 'success',
                         confirmButtonText: 'OK'
                     })
-                } 
+                }
             })
     }
-
 
 
     return (
@@ -57,12 +76,14 @@ const ArticleCreate = () => {
                                 <label className='upperCaseHeader' htmlFor="floatingTextarea">Title</label>
 
                             </div>
-                            <div className="form-floating ">
-                                <textarea className="form-control" name="details" cols="5" rows="5"></textarea>
+
+                            <div className="form-floating">
+                                <input className="form-control" name="details" cols="5" rows="5" />
                                 <label className='upperCaseHeader' htmlFor="floatingTextarea">Details</label>
                             </div>
+
                             <div>
-                                <button className='article-btn' type='submit'>Create</button>
+                                <button className='stories-btn' type='submit'>Create</button>
                             </div>
                         </form>
                     </div>

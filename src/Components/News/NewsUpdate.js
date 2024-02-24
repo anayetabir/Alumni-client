@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import JoditEditor from 'jodit-react';
 
 const NewsUpdate = () => {
 
     const news = useLoaderData();
-
-
+    const editor = useRef(null);
+    const [post, setPost] = useState('');
     const handleUpdate = event => {
         event.preventDefault();
         const form = event.target;
-        const post = form.post.value;
+        const title = form.title.value;
+
 
         // console.log('news created: ', post);
 
-        const newsUpdate = { post };
+        const newsUpdate = { title, post };
         //console.log('news created: ', newspost);
         //form.reset();
 
@@ -53,9 +55,31 @@ const NewsUpdate = () => {
                         <div className="container-fluid w-75">
                             <h3>Update Post</h3>
                             <form onSubmit={handleUpdate}>
-                                <div className="form-group">
-                                    <textarea className="form-control" name='post' defaultValue={news.post} rows="10"></textarea>
+                                {/* <div className="form-group"> */}
+                                {/* <textarea className="form-control" name='post' defaultValue={news.post} rows="10"></textarea> */}
+
+                                {/* <JoditEditor
+                                        ref={editor}
+                                        value={news.post}
+                                        onChange={setPost}
+                                    />
+                                </div> */}
+
+                                <div className="mb-3">
+                                    <label for="recipient-name" className="col-form-label">Title:</label>
+                                    <input type="text" className="form-control" id="recipient-name" name='title' defaultValue={news.title} />
                                 </div>
+                                <div className="mb-3">
+                                    <label for="message-text" className="col-form-label">Details</label>
+                                    <JoditEditor
+                                        ref={editor}
+                                        value={news.post}
+                                        onChange={setPost}
+                                    />
+                                    {/* <textarea className="form-control" id="message-text" name='post'></textarea> */}
+                                </div>
+
+
                                 <div className="mt-2 d-flex justify-content-end">
                                     <button type="submit " className='btn btn-primary me-2'>Update</button>
                                 </div>

@@ -14,7 +14,8 @@ const Footer = () => {
                     <div className="footer_width about">
                         <h2>About  <div className='underline1'><span className='ft-span'></span></div></h2>
                         <p className='text-white'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo natus labore harum quisquam accusantium facere eos non dolores aspernatur odio soluta animi, nobis veniam qui vero, iste enim doloribus nostrum?
+
+                            Established in 2001 by Ragib Ali, Leading University initially operated from rented spaces until its permanent campus opened in 2016. It faced controversy for not convening essential meetings from 2013 to 2014. In 2015, students protested against VAT on education by blocking roads. By 2018, it had four faculties with 4,692 students, mainly in business administration and engineering. In 2021, Qazi Azizul Mowla became vice-chancellor, but allegations of financial irregularities emerged, leading to a dispute between him and the board of trustees in 2023, prompting an investigation by the University Grants Commission.
                         </p>
                         <div className='social-media'>
                             <ul>
@@ -46,25 +47,28 @@ const Footer = () => {
                         <h2> Contact <div className='underline1'><span className='ft-span'></span></div></h2>
                         <ul>
                             <li>
-                                <span className='footer_icon1'><i class="fa-solid fa-location-dot"></i></span>
-                                <p className='text-white'>
-                                    Leading University
-                                    Ragibnagar, South Surma, <br /> Sylhet-3112
-                                </p>
+                                <div className='d-flex align-items-center justify-content-center'>
+                                    <span className='footer_icon1'><i class="fa-solid fa-location-dot"></i></span>
+                                    <div className='text-white'>
+                                        Leading University
+                                        Ragibnagar, South Surma, <br /> Sylhet-3112
+                                    </div>
+                                </div>
 
                             </li>
                             <li>
-                                <span className='footer_icon2'><i class="fa-solid fa-envelope"></i></span>
-                                <p className='text-white'>
-                                    Email: <a href="info@lus.ac.bd">info@lus.ac.bd</a>
-                                </p>
-
+                                <div className='d-flex align-items-center'>
+                                    <span className='footer_icon2'><i class="fa-solid fa-envelope"></i></span>
+                                    <div className='text-white'>
+                                        Email: <a href="info@lus.ac.bd">info@lus.ac.bd</a>
+                                    </div>
+                                </div>
                             </li>
                             <li>
                                 <span className='footer_icon3'><i class="fa-solid fa-phone-volume"></i></span>
-                                <p className='text-white'>
+                                <div className='text-white'>
                                     Phone: 01313084499.
-                                </p>
+                                </div>
 
                             </li>
                         </ul>

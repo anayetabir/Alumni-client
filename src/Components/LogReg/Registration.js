@@ -253,25 +253,25 @@ const Registration = () => {
                                 <div className="button-container">
                                     <div className="text-fields name">
                                         <label htmlFor="name"><i className='bx bx-user'></i></label>
-                                        <input type="text" name="name" id="name" placeholder='Enter Your Name' />
+                                        <input className='input-logreg' type="text" name="name" id="name" placeholder='Enter Your Name' />
                                     </div>
                                     <div className="text-fields batch">
                                         <label htmlFor="batch"><i className='bx bx-buildings bx-tada bx-flip-horizontal' ></i></label>
-                                        <input type="text" name="batch" id="batch" placeholder='Enter Your Batch' />
+                                        <input className='input-logreg' type="text" name="batch" id="batch" placeholder='Enter Your Batch' />
                                     </div>
                                 </div>
 
                                 <div className="button-container">
                                     <div className="text-fields dob">
-                                        <input type="date" name="dob" id="dob" />
+                                        <input className='input-logreg' type="date" name="dob" id="dob" />
                                     </div>
                                     <div className="gender-selection">
                                         <p className="field-heading">Gender : </p>
                                         <label htmlFor="male">
-                                            <input type="radio" name="gender" id="male" value="Male" />Male
+                                            <input className='input-logreg' type="radio" name="gender" id="male" value="Male" />Male
                                         </label>
                                         <label htmlFor="female">
-                                            <input type="radio" name="gender" id="female" value="Female" />Female
+                                            <input className='input-logreg' type="radio" name="gender" id="female" value="Female" />Female
                                         </label>
                                     </div>
                                 </div>
@@ -284,11 +284,11 @@ const Registration = () => {
                                 <div className="button-container">
                                     <div className="text-fields phone">
                                         <label htmlFor="phone"><i className='bx bx-phone'></i></label>
-                                        <input type="number" name="phone" id="phone" placeholder='Enter Your Contact Number' />
+                                        <input className='input-logreg' type="number" name="phone" id="phone" placeholder='Enter Your Contact Number' />
                                     </div>
                                     <div className="text-fields email">
                                         <label htmlFor="email"><i className='bx bx-envelope'></i></label>
-                                        <input type="email" name="email" id="email" placeholder='Enter Your Email ID ' />
+                                        <input className='input-logreg' type="email" name="email" id="email" placeholder='Enter Your Email ID ' />
                                         {/* <input type="email" name="email" id="email" placeholder='Enter Your Email ID ' /> */}
                                     </div>
                                 </div>
@@ -296,11 +296,11 @@ const Registration = () => {
                                 <div className="button-container">
                                     <div className="text-fields password">
                                         <label htmlFor="password"><i className='bx bx-lock' ></i></label>
-                                        <input type="password" name="password" id="password" placeholder='Enter Your Password' />
+                                        <input className='input-logreg' type="password" name="password" id="password" placeholder='Enter Your Password' />
                                     </div>
                                     <div className="text-fields confirmpassword">
                                         <label htmlFor="confirmpassword"><i className='bx bx-lock' ></i></label>
-                                        <input type="password" name="confirmpassword" id="confirmpassword" placeholder='Confirm Password' />
+                                        <input className='input-logreg' type="password" name="confirmpassword" id="confirmpassword" placeholder='Confirm Password' />
                                     </div>
                                 </div>
 
@@ -312,7 +312,7 @@ const Registration = () => {
                                 <div className="button-container">
                                     <div className="text-fields city">
                                         <label htmlFor="city"><i className='bx bx-buildings bx-tada bx-flip-horizontal' ></i></label>
-                                        <input type="text" name="city" id="city" placeholder='Enter Your City' />
+                                        <input className='input-logreg' type="text" name="city" id="city" placeholder='Enter Your City' />
                                     </div>
                                     <div className="text-fields blood">
                                         <label htmlFor="blood"><i className='bx bxs-donate-blood bx-tada bx-flip-horizontal' ></i></label>
