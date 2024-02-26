@@ -1,11 +1,6 @@
-
-
 import React, { useContext, useEffect, useState } from 'react';
 import './Event.css';
-import loginarea from '../img/loginarea.png';
-import sohidminar3 from '../img/shohidMinar3.jpg';
 import cevent from '../img/cevent.svg';
-import picnic from '../img/picnic.jpg';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

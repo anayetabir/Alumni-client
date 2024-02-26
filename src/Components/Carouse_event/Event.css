@@ -43,14 +43,18 @@
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: center;
 
 
 }
 
 .container .box-container .box .image img {
-    height: 100%;
-    width: 50%;
-    object-fit: cover;
+    max-height: 200px;
+    /* Set a maximum height for the image */
+    max-width: 100%;
+    /* Ensure the image doesn't overflow its container */
+    object-fit: cover
 }
 
 .container .box-container .box:hover .image img {
