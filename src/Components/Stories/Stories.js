@@ -5,13 +5,13 @@ import Footer from '../Footer/Footer';
 import './Stories.css';
 import story from '../img/story.svg';
 import StoriesCreate from './StoriesCreate';
-import {useLoaderData} from'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import StoryCard from './StoryCard';
 import { AuthContext } from '../../Context/UserContext';
 
 const Stories = () => {
-    const loadedStories =useLoaderData();
-    const [stories,setStories]=useState(loadedStories);
+    const loadedStories = useLoaderData();
+    const [stories, setStories] = useState(loadedStories);
 
     const { user } = useContext(AuthContext);
 
@@ -19,24 +19,24 @@ const Stories = () => {
         <div className='b-stories'>
             <Head></Head>
             <div>
-            {(user) ? <>
-                <StoriesCreate></StoriesCreate>
-            </> : <></>}
+                {(user) ? <>
+                    <StoriesCreate></StoriesCreate>
+                </> : <></>}
 
-            <div className="s-back">
-                <div className='s-p'>
-                    <div className="s-label mx-5 mb-5">
-                        <div className="s-text">Stories</div>
-                    </div>
-                    <div>
-                    {
-                        stories.map(story => <StoryCard 
-                        key={story._id}
-                        story={story}
-                        stories={stories}
-                        setStories={setStories}></StoryCard>)
-                    }
-                    </div>
+                <div className="s-back">
+                    <div className='s-p'>
+                        <div className="s-label mx-5 mb-5">
+                            <div className="s-text ">Stories</div>
+                        </div>
+                        <div>
+                            {
+                                stories.map(story => <StoryCard
+                                    key={story._id}
+                                    story={story}
+                                    stories={stories}
+                                    setStories={setStories}></StoryCard>)
+                            }
+                        </div>
                     </div>
                     {/* <div className='d-flex justify-content-center'>
                         <div className='s-box'>

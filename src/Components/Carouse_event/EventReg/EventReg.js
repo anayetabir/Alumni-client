@@ -161,6 +161,11 @@ const EventReg = () => {
 
                     <button class="btn btn-primary " type="submit">Register Event</button>
                 </form> */}
+
+
+            
+
+
                 <div className="evt-container">
                     <form action="" className='evt-form'>
                         <div className="evt-card evt-cart">

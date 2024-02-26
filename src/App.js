@@ -25,6 +25,9 @@ import JobUpdates from './Components/Job/JobUpdates';
 import UpdateEvent from './Components/Carouse_event/UpdateEvent';
 import EventReg from './Components/Carouse_event/EventReg/EventReg';
 import ArticleRead from './Components/Articles/ReadMore/ArticleRead';
+import ApplyJob from './Components/Job/ApplyJob/ApplyJob';
+
+
 
 
 
@@ -132,7 +135,7 @@ function App() {
     },
     {
       path: "/readeventdetails/:id",
-      element: <EventReg></EventReg>,
+      element: <PrivateRoute><EventReg></EventReg></PrivateRoute>,
       loader: ({ params }) => fetch(`http://localhost:5000/event/${params.id}`)
     },
     {
@@ -140,9 +143,12 @@ function App() {
       element: <ArticleRead></ArticleRead>,
       loader: ({ params }) => fetch(`http://localhost:5000/article/${params.id}`)
     },
+    {
+      path: "/jobapply/:id",
+      element: <PrivateRoute><ApplyJob></ApplyJob></PrivateRoute>,
+      loader: ({ params }) => fetch(`http://localhost:5000/job/${params.id}`)
+    },
   ])
-
-
 
   return (
     <div className='App'>

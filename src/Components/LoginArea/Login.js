@@ -110,8 +110,8 @@ const Login = () => {
                                 {(user) &&
                                     <>
                                         <div class="home-details">
-                                            <h2 class="home-title">{user.displayName}</h2>
-                                            <span class="home-caption"><span className='text-black'>ID : </span>2012020191</span>
+                                            <h2 class="home-title fw-semibold">{user.displayName}</h2>
+                                            <span class="home-caption"><span className='text-black fw-semibold'>ID : </span>2012020191</span>
                                         </div>
 
                                     </>}

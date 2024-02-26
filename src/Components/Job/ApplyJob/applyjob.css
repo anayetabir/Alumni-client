@@ -1,0 +1,22 @@
+.bg-apply {
+    background: #EFF0FF;
+}
+
+.bg-apply-board {
+    width: 80%;
+    height: auto;
+    /* flex-shrink: 0; */
+    background: #FFF;
+    box-shadow: 4px 11px 13px 0px rgba(0, 0, 0, 0.25), 5px 6px 24px 0px rgba(0, 0, 0, 0.25) inset;
+    /* box-shadow: 10px 17px 9px -3px #00000040; */
+    padding: 30px;
+}
+
+.bg-apply-board-inner {
+    width: 100%;
+    height: auto;
+    background: #DAE1E9;
+    /* box-shadow: 4px 11px 13px 0px rgba(0, 0, 0, 0.25), 5px 6px 24px 0px rgba(0, 0, 0, 0.25) inset; */
+    box-shadow: 10px 17px 9px -3px #00000040;
+    padding: 10px;
+}

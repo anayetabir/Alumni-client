@@ -31,7 +31,7 @@ const HomeStories = () => {
 
     return (
         <div>
-            <h1>Stories</h1>
+            <h1 className='fw-bold mt-5 mb-4'>Stories</h1>
 
             <div>
                 <Swiper

@@ -44,7 +44,7 @@ const HomeArticle = () => {
 
     return (
         <div className='mt-3'>
-            <h1>Latest Articles</h1>
+            <h1 className='fw-bold mt-5 mb-4'>Latest Articles</h1>
             <Swiper
                 slidesPerView={slidesPerView}
                 spaceBetween={30}

@@ -119,6 +119,9 @@ const Login = () => {
                         {/* <button className="loginbtn" onClick={handleRegisterClick}>register</button> */}
                         <input type="button" value="Register Now" className="loginbtn" onClick={handleRegisterClick} />
                     </div>
+
+
+
                     <form onSubmit={handleFormSubmitLogin} className="signup-form-container">
                         <p className="big-heading">Login To Your Account</p>
                         <div className="social-media-platform">
@@ -143,7 +146,7 @@ const Login = () => {
                                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name='password' />
                                 <label for="floatingPassword"><i className='bx bx-lock' ></i>Password</label>
                             </div>
-                            <p><small>Forget Password? Please<button className='btn btn-link' onClick={handleResetPass}>Reset Password</button></small></p>
+                            <p><small> <b>Forget Password? Please..</b> <br /><button className='btn btn-link' onClick={handleResetPass}>Reset Password</button></small></p>
                             <input type="submit" value="login" className="nextPage" />
 
 
