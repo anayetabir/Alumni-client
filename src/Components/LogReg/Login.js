@@ -41,7 +41,7 @@ const Login = () => {
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
-                if(!loggedUser.emailVerified){
+                if (!loggedUser.emailVerified) {
                     alert('Please verify your email address');
                 }
                 form.reset();
@@ -83,7 +83,7 @@ const Login = () => {
     const emailRef = useRef();
 
     const handleResetPass = (event) => {
-        
+
         const email = emailRef.current.value;
         // console.log(email);
         if (!email) {
@@ -92,12 +92,12 @@ const Login = () => {
         }
 
         resetEmail(email)
-        .then( () => {
-            alert('Please check your email');
-        })
-        .catch(error => {
-            console.log(error);
-        })
+            .then(() => {
+                alert('Please check your email');
+            })
+            .catch(error => {
+                console.log(error);
+            })
 
     }
 
@@ -105,7 +105,7 @@ const Login = () => {
     return (
         <div>
             <Head></Head>
-            <div className="body2">
+            <div className="body2 pt-5 mt-5">
                 <div className="container r">
                     <div className="login-link">
                         <div className="logo">
@@ -122,18 +122,26 @@ const Login = () => {
                     <form onSubmit={handleFormSubmitLogin} className="signup-form-container">
                         <p className="big-heading">Login To Your Account</p>
                         <div className="social-media-platform">
-                            <a href="#" onClick={handleGoogleSignIn} ><i className='bx bx-lg bxl-google'></i></a>
+                            {/* <a href="#" onClick={handleGoogleSignIn} ><i className='bx bx-lg bxl-google'></i></a> */}
                             {/* <a href="#"><i className='bx bx-sm bxl-twitter'></i></a>
                             <a href="#" onClick={handleGithubSignIn}><i className='bx bx-sm bxl-github'></i></a> */}
                         </div>
                         <div className="login-form-contents">
-                            <div className="text-fields email">
+                            {/* <div className="text-fields email">
                                 <label htmlFor="email"><i className='bx bx-envelope'></i></label>
                                 <input className='input-logreg' type="email" name="email" id="email" ref={emailRef} placeholder='Enter Your Email ID ' />
                             </div>
                             <div className="text-fields password">
                                 <label htmlFor="password"><i className='bx bx-lock' ></i></label>
                                 <input className='input-logreg' type="password" name="password" id="password" placeholder='Enter Your Password' />
+                            </div> */}
+                            <div class="form-floating mb-3 w-100">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name='email' ref={emailRef} />
+                                <label for="floatingInput"><i className='bx bx-envelope'></i>Email address</label>
+                            </div>
+                            <div class="form-floating w-100">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name='password' />
+                                <label for="floatingPassword"><i className='bx bx-lock' ></i>Password</label>
                             </div>
                             <p><small>Forget Password? Please<button className='btn btn-link' onClick={handleResetPass}>Reset Password</button></small></p>
                             <input type="submit" value="login" className="nextPage" />

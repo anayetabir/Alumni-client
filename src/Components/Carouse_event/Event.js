@@ -82,7 +82,7 @@ const Event = () => {
                     <div className='carousel-inner'>
                         {pairedEvents.map((pair, index) => (
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval='5000'>
-                                <div className='container d-flex justify-content-center'>
+                                <div className='container1 d-flex justify-content-center'>
                                     <div className='box-container '>
                                         {pair.map((event, eventIndex) => (
                                             <div className='box ' key={event._id}>

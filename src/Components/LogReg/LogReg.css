@@ -447,4 +447,59 @@
         font-size: 0.8rem;
     }
 
+    .text-fields.city:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .text-fields.password:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .text-fields.confirmpassword:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .text-fields.email:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .text-fields.phone:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .text-fields.dob:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .text-fields.batch:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .text-fields.name:after {
+        padding: 0 2%;
+        left: -190px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
 }
