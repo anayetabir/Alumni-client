@@ -67,8 +67,8 @@ const Event = () => {
 
     // Create pairs of events for two events in one slide
     const pairedEvents = [];
-    for (let i = 0; i < events.length; i += 2) {
-        pairedEvents.push(events.slice(i, i + 2));
+    for (let i = 0; i < events.length; i += 1) {
+        pairedEvents.push(events.slice(i, i + 1));
     }
 
 
@@ -79,36 +79,21 @@ const Event = () => {
         <div className='event '>
             <div className='p-5 m-5 w-100 mx-auto'>
                 <div id='carouselExampleCaptions' className='carousel slide' data-bs-ride='carousel'>
-                    <div className='carousel-indicators'>
-                        {/* Add indicators based on the pairedEvents array length */}
-                        {pairedEvents.map((pair, index) => (
-                            <button
-                                key={index}
-                                type='button'
-                                data-bs-target='#carouselExampleCaptions'
-                                data-bs-slide-to={index}
-                                className={index === 0 ? 'active' : ''}
-                                aria-current={index === 0}
-                                aria-label={`Slide ${index + 1}`}
-                            ></button>
-                        ))}
-                    </div>
-
                     <div className='carousel-inner'>
                         {pairedEvents.map((pair, index) => (
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval='5000'>
                                 <div className='container d-flex justify-content-center'>
                                     <div className='box-container '>
-                                        {pair.map((event) => (
-
+                                        {pair.map((event, eventIndex) => (
                                             <div className='box ' key={event._id}>
-
                                                 <div className='image '>
                                                     <img src={event.photoUrl} className='img1 ' alt='...' />
                                                 </div>
                                                 <div className='content transition'>
                                                     <h3><b>{event.title}</b></h3>
-                                                    <p>{event.description}</p>
+                                                    <p className="description">{event.description}</p>
+
+                                                    {/* <p>{event.description}</p> */}
                                                     <Link className='btn' to={`/readeventdetails/${event._id}`} onClick={() => HandleEventRead(event._id)}>
                                                         Register
                                                     </Link>
@@ -122,29 +107,24 @@ const Event = () => {
                                                             {event.endDate}
                                                         </span>
                                                     </div>
-                                                    {(user) ? <>
-                                                        {((user.uid === event.uid) || userData.find(userDoc => userDoc.uid === user.uid && (userDoc.role === 'superAdmin' || userDoc.role === 'admin'))) && (
-                                                            <>
-                                                                <div>
-                                                                    <span className='deleteBtn'>
-                                                                        <button onClick={() => handleDelete(event._id)} className='btn btn-outline-light'>
-                                                                            <i className='fa-solid fa-trash dark'></i>
-                                                                        </button>
-                                                                    </span>
+                                                    {(user) ? (
+                                                        ((user.uid === event.uid) || userData.find(userDoc => userDoc.uid === user.uid && (userDoc.role === 'superAdmin' || userDoc.role === 'admin'))) && (
+                                                            <div>
+                                                                <span className='deleteBtn'>
+                                                                    <button onClick={() => handleDelete(event._id)} className='btn btn-outline-light'>
+                                                                        <i className='fa-solid fa-trash dark'></i>
+                                                                    </button>
+                                                                </span>
 
-                                                                    <Link to={`/updateEvent/${event._id}`}>
-
-                                                                        <button className='evn-btn btn btn-outline-light' >
-                                                                            <i class="fa-regular fa-pen-to-square dark"></i>
-                                                                        </button>
-                                                                    </Link>
-
-                                                                </div>
-                                                            </>
-                                                        )}
-                                                    </> : <></>}
+                                                                <Link to={`/updateEvent/${event._id}`}>
+                                                                    <button className='evn-btn btn btn-outline-light' >
+                                                                        <i className="fa-regular fa-pen-to-square dark"></i>
+                                                                    </button>
+                                                                </Link>
+                                                            </div>
+                                                        )
+                                                    ) : null}
                                                 </div>
-
                                             </div>
                                         ))}
                                     </div>
@@ -163,8 +143,7 @@ const Event = () => {
                     </button>
                 </div>
 
-
-                {(user) ? <>
+                {(user) ? (
                     <div className='d-flex'>
                         <div className='ms-auto'>
                             <div className='x'>
@@ -174,10 +153,12 @@ const Event = () => {
                             </div>
                         </div>
                     </div>
-                </> : <></>}
+                ) : null}
 
             </div>
         </div>
+
+
     );
 };
 
