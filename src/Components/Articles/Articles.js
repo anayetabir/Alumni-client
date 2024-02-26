@@ -4,7 +4,6 @@ import error from '../img/error.gif';
 import Head from '../Head/Head';
 import Footer from '../Footer/Footer';
 import news from '../img/loginarea.png';
-import picnic from '../img/picnic.jpg';
 import ArticleCreate from './ArticleCreate';
 import { Link, useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -18,7 +17,6 @@ const Articles = () => {
 
     const [articles, setArticles] = useState(article);
 
-    // const handleReadMode = _id => { console.log(_id) }
 
 
     const [userData, setUserData] = useState([]);
@@ -69,11 +67,6 @@ const Articles = () => {
 
     }
 
-    const HandleArticleRead = _id => {
-        console.log(_id);
-    }
-
-
     return (
         <div>
             <Head></Head>
@@ -97,54 +90,55 @@ const Articles = () => {
                     {articles.map(article =>
 
                         <div key={article._id}>
-                            <div className="blog-box shadow">
-                                {/* image */}
-                                <div className="blog-img">
-                                    <img src={article.photoUrl} alt="" />
-                                </div>
-                                {/* menu */}
-                                {(user) ? <>
-                                    {((user.uid === article.uid) || userData.find(userDoc => userDoc.uid === user.uid && (userDoc.role === 'superAdmin' || userDoc.role === 'admin'))) && (
-                                        <>
-                                            <div className="d-flex justify-content-end mt-1 ">
-                                                <a href="#!" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    <div className='icon-art'>
-                                                        <i className='fa-solid fa-ellipsis-vertical dark ' aria-hidden="true"></i>
-                                                    </div>
-                                                    {/* <FontAwesomeIcon icon="fa-solid fa-ellipsis-vertical" /> */}
-                                                </a>
+                            {article.approval === 'approved' && <>
+                                <div className="blog-box shadow">
+                                    {/* image */}
+                                    <div className="blog-img">
+                                        <img src={article.photoUrl} alt="" />
+                                    </div>
+                                    {/* menu */}
+                                    {(user) ? <>
+                                        {((user.uid === article.uid) || userData.find(userDoc => userDoc.uid === user.uid && (userDoc.role === 'superAdmin' || userDoc.role === 'admin'))) && (
+                                            <>
+                                                <div className="d-flex justify-content-end mt-1 ">
+                                                    <a href="#!" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <div className='icon-art'>
+                                                            <i className='fa-solid fa-ellipsis-vertical dark ' aria-hidden="true"></i>
+                                                        </div>
+                                                        {/* <FontAwesomeIcon icon="fa-solid fa-ellipsis-vertical" /> */}
+                                                    </a>
 
-                                                <div className="dropdown-menu dropdown-menu-right " aria-labelledby='triggerId'>
+                                                    <div className="dropdown-menu dropdown-menu-right " aria-labelledby='triggerId'>
 
-                                                    <Link to={`/ArticleUpdate/${article._id}`}>
-                                                        <button className="dropdown-item text-danger">Update
-                                                            <i className='bx bx-edit'></i>
+                                                        <Link to={`/ArticleUpdate/${article._id}`}>
+                                                            <button className="dropdown-item text-danger">Update
+                                                                <i className='bx bx-edit'></i>
+                                                            </button>
+                                                        </Link>
+                                                        <button onClick={() => handleDelete(article._id)} className="dropdown-item text-danger">Delete
+                                                            <i className='bx bxs-trash'></i>
                                                         </button>
-                                                    </Link>
-                                                    <button onClick={() => handleDelete(article._id)} className="dropdown-item text-danger">Delete
-                                                        <i className='bx bxs-trash'></i>
-                                                    </button>
+
+                                                    </div>
 
                                                 </div>
-
-                                            </div>
-                                        </>
-                                    )}
-                                </> : <></>}
-                                {/*Text */}
-                                <div className="blog-text">
-                                    <span>{article.createdAt}</span>
-                                    <div className='blog-title'><b>{article.title}</b></div>
-                                    <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{article.details}</p>
-                                    {/* <a href="" onClick={()=> handleReadMode(article._id)}>Read More</a> */}
-                                    {/* <button onClick={() => handleReadMode(article._id)} className='nextPage mx-auto'>Read More</button> */}
-
-                                    <Link className='btn' to={`/readarticledetails/${article._id}`} onClick={() => HandleArticleRead(article._id)}>
-                                        <button className="btn btn-outline-danger">Read More</button>
-                                    </Link>
+                                            </>
+                                        )}
+                                    </> : <></>}
+                                    {/*Text */}
+                                    <div className="blog-text">
+                                        <span>{article.createdAt}</span>
+                                        <div className='blog-title'><b>{article.title}</b></div>
+                                        <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{article.details}</p>
+                                        {/* <a href="" onClick={()=> handleReadMode(article._id)}>Read More</a> */}
+                                        {/* <button onClick={() => handleReadMode(article._id)} className='nextPage mx-auto'>Read More</button> */}
+                                        <Link className='btn' to={`/readarticledetails/${article._id}`}>
+                                            <button className='nextPage mx-auto'>Read More</button>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </div>
+                            </>}
                         </div>
 
                     )}

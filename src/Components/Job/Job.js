@@ -77,11 +77,18 @@ const Job = () => {
 
             <div className="grid-container">
 
-                {
-                    jobs.map(job => <JobCard key={job._id} job={job}
-                        jobs={jobs}
-                        setJobs={setJobs}></JobCard>)
-                }
+                <>
+                    {jobs
+                        .filter(job => job.approval === 'approved')
+                        .map(job => (
+                            <JobCard
+                                key={job._id}
+                                job={job}
+                                jobs={jobs}
+                                setJobs={setJobs}
+                            />
+                        ))}
+                </>
 
             </div>
 
