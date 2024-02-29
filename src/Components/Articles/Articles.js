@@ -10,7 +10,9 @@ import Swal from 'sweetalert2';
 import { AuthContext } from '../../Context/UserContext';
 
 
+
 const Articles = () => {
+
 
     const { user } = useContext(AuthContext);
     const article = useLoaderData();
@@ -77,7 +79,7 @@ const Articles = () => {
             <section className="blog">
                 {/* Heading */}
                 <div className="blog-heading">
-                    <span>Leading University</span>
+                    <span>Alumni Association</span>
                     <h3>Articles</h3>
                 </div>
 
@@ -129,8 +131,18 @@ const Articles = () => {
                                     {/*Text */}
                                     <div className="blog-text">
                                         <span>{article.createdAt}</span>
-                                        <div className='blog-title'><b>{article.title}</b></div>
-                                        <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{article.details}</p>
+                                        <div class="article-tooltip-container">
+                                            <div className='blog-title text-truncate'>
+
+                                                <span class="article-tooltip-text"><b>{article.title}</b></span>
+                                                <span class="article-tooltip">{article.title}</span>
+
+
+                                            </div>
+                                        </div>
+                                        <p style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
+                                            dangerouslySetInnerHTML={{ __html: article.details }}
+                                        />
                                         {/* <a href="" onClick={()=> handleReadMode(article._id)}>Read More</a> */}
                                         {/* <button onClick={() => handleReadMode(article._id)} className='nextPage mx-auto'>Read More</button> */}
                                         <Link className='btn' to={`/readarticledetails/${article._id}`}>

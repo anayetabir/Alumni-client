@@ -59,7 +59,7 @@ const HomeStories = () => {
                 >
                     {stories.map(story => (
                         <SwiperSlide key={story._id} className='' style={{ width: '500px', height: '550px' }}>
-                            <img src={story.photo} className='img-fluid' style={{ width: '500px', height: '500px' }} />
+                            <img src={story.photo} className='img-fluid story-img' style={{ width: '500px', height: '500px' }} />
                             <h2>{story.title}</h2>
                         </SwiperSlide>
 
