@@ -14,11 +14,7 @@ const Footer = () => {
                     <div className="footer_width about">
                         <h2>About  <div className='underline1'><span className='ft-span'></span></div></h2>
                         <p className='text-white'>
-
-                            We are the official alumni association for the Department of Computer Science and
-                            Engineering, Leading University. The association was established in May 2023 with a mission
-                            to create a platform that will provide networking opportunities for ex-students. The association
-                            started its journey by establishing the first convenor committee on 8 July 2023.
+                            We are the official alumni association for the Department of Computer Science and Engineering, Leading University. The association was established in May 2023 with a mission to create a platform that will provide networking opportunities for ex-students. The association started its journey by establishing the first convenor committee on 8 July 2023.
                         </p>
                         <div className='social-media'>
                             <ul>
@@ -37,8 +33,6 @@ const Footer = () => {
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">FAQ</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
 
@@ -85,7 +79,7 @@ const Footer = () => {
 
 
                 <div>
-                    <img src={payWith} className='footImg' alt="" />
+                    {/* <img src={payWith} className='footImg' alt="" /> */}
                     <p>Created by LU CSE Alumni Association © 2024</p>
                 </div>
             </footer>

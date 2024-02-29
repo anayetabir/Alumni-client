@@ -1,8 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import './ArticleRead.css';
+
 import Head from '../../Head/Head';
 import Footer from '../../Footer/Footer';
+import Articles from '../Articles';
 
 const ArticleRead = () => {
 
@@ -20,7 +21,9 @@ const ArticleRead = () => {
                         <div className='black-label  '>
                             <span className='black-title'><b>{articles.title} </b></span>
 
-                            <p className='black-title-p '>{articles.details} </p>
+                            <p className='black-title-p'
+                                dangerouslySetInnerHTML={{ __html: articles.details }}
+                            />
 
                         </div>
                     </div>

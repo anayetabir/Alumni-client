@@ -91,12 +91,12 @@ const CreateEvent = () => {
                                 </div>
 
                                 <div className="form-floating mb-3">
-                                    <input className="form-control" id="floatingTextarea2Disabled" name="startDate" placeholder='Start Date' />
+                                    <input type='date' className="form-control" id="floatingTextarea2Disabled" name="startDate" placeholder='Start Date' />
                                     <label htmlFor="floatingTextarea2Disabled">Start Date</label>
                                 </div>
 
                                 <div className="form-floating mb-3">
-                                    <input className="form-control" id="floatingTextarea2Disabled" name="endDate" placeholder='End Date' />
+                                    <input type='date' className="form-control" id="floatingTextarea2Disabled" name="endDate" placeholder='End Date' />
                                     <label htmlFor="floatingTextarea2Disabled">End Date</label>
                                 </div>
 

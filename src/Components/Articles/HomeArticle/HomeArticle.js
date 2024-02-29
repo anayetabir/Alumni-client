@@ -3,7 +3,6 @@ import './HomeArticle.css';
 
 import job from '../../img/job.png';
 import event from '../../img/loginarea.png';
-import picnic from '../../img/picnic.jpg';
 import connect from '../../img/connect.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -61,22 +60,23 @@ const HomeArticle = () => {
                 className="mySwiper"
             >
                 {article.map(article => (
-                    <SwiperSlide key={article._id}>
-                        <div className='btn-light'>
-                            <div className="card text-white h-100 bg mb-3  shadow" style={{ height: '300px', overflow: 'hidden' }}>
-                                <img src={article.photoUrl} alt='' className='card-img-top image1 blog-img p-2' />
-                                <div className="card-header text-primary text-truncate">
-                                    <b>{article.title}</b>
+                    <React.Fragment key={article._id}>
+                        {article.approval === 'approved' && (
+                            <SwiperSlide>
+                                <div className='btn-light'>
+                                    <div className="card text-white h-100 bg mb-3 p-3 shadow" style={{ height: '300px', overflow: 'hidden' }}>
+                                        <img src={article.photoUrl} alt='' className='card-img-top image1 blog-img' />
+                                        <div className="card-header text-primary text-truncate">{article.title}</div>
+                                        <div className="card-body">
+                                            <p className="card-text text-black" style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
+                                                dangerouslySetInnerHTML={{ __html: article.details }}
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div className="card-body">
-
-                                    <p className="card-text text-black" style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{article.details}</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </SwiperSlide>
+                            </SwiperSlide>
+                        )}
+                    </React.Fragment>
                 ))}
 
                 <br />
