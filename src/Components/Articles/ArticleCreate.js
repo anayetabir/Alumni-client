@@ -1,25 +1,32 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import articleimg from '../img/articleimg.svg';
 import './Articles.css';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Context/UserContext';
+import JoditEditor from 'jodit-react';
 
 const ArticleCreate = () => {
 
     const { user } = useContext(AuthContext);
+
+    const [details, setDetails] = useState('');
+
+    const editor = useRef(null);
+
+
     const time = new Date();
     const handleAddArticle = event => {
         event.preventDefault();
         const form = event.target;
         const title = form.title.value;
-        const details = form.details.value;
+        // const details = form.details.value;
         const photoUrl = form.photoUrl.value;
         const name = user.displayName;
         const uid = user.uid;
         const createdAt = time.toLocaleString();
         const approval = 'WaitingForApprove';
 
-        const newArticle = { title, details,photoUrl, name, uid, approval, createdAt };
+        const newArticle = { title, details, photoUrl, name, uid, approval, createdAt };
 
         form.reset();
 
@@ -78,9 +85,13 @@ const ArticleCreate = () => {
 
                             </div>
 
-                            <div className="form-floating">
-                                <input className="form-control" name="details" cols="5" rows="5" />
-                                <label className='upperCaseHeader' htmlFor="floatingTextarea">Details</label>
+                            <div className="mb-4">
+                            <label>Description</label>
+                                <JoditEditor
+                                    ref={editor}
+                                    value={details}
+                                    onChange={setDetails}
+                                />
                             </div>
                             <div className="form-floating ">
                                 <input className="form-control" type="text" name="photoUrl" />
