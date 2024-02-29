@@ -68,7 +68,7 @@ const UpdateEvent = () => {
 
             <h1 className='mt-5 pt-5'>Welcome!</h1>
 
-            <div className='mt-5'>
+            <div className='mt-5 mb-5'>
                 <div className='row'>
                     <div className='col-md-6'><img src={covevent} alt="" className='img-fluid' /></div>
                     <div className='col-md-6'>

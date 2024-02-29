@@ -1,18 +1,13 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import sohidminar3 from '../img/loginarea.png';
 import leading from '../img/shohidMinar3.jpg';
 import './Login.css'
 import { useNavigate } from 'react-router-dom';
-import reading from '../img/reading.svg';
-import picnic from '../img/picnic.jpg';
-import AlumniMetting from '../img/AkunmiMeeting.jpg';
-import kallolDas from '../img/KallolDas.jpg';
-import picnicDetails from '../img/picnicDetails.jpg';
+import reading from '../img/reading.svg'
 import logo3 from '../img/logo3.svg';
 import { useKeenSlider } from "keen-slider/react"
-import homeAnimation1 from '../img/ProfileAnimation1.gif';
-import { useContext } from 'react';
 import { AuthContext } from '../../Context/UserContext';
+import homeAnimation1 from '../img/ProfileAnimation1.gif';
 
 const carousel = (slider) => {
     const z = 300
@@ -32,12 +27,19 @@ const carousel = (slider) => {
 
 
 const Login = () => {
-    const { user } = useContext(AuthContext);
 
     const navigate = useNavigate();
     const registerClicked = () => {
         navigate("/registration");
     };
+    const [currentUser, setCurrentuser] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/user')
+            .then(res => res.json())
+            .then(data => setCurrentuser(data))
+    }, []);
+
+    const { user } = useContext(AuthContext);
 
     const [sliderRef] = useKeenSlider(
         {
@@ -88,11 +90,11 @@ const Login = () => {
                             <div className="wrapper-x homeStories1">
                                 <div className="scene">
                                     <div className="carousel keen-slider" ref={sliderRef}>
-                                        <div className="carousel__cell number-slide1 "> <img src={AlumniMetting} className='img7' alt='...' /></div>
-                                        <div className="carousel__cell number-slide2"><img src={leading} className='img7' alt='...' /></div>
-                                        <div className="carousel__cell number-slide3"><img src={picnic} className='img7' alt='...' /></div>
-                                        <div className="carousel__cell number-slide4"><img src={kallolDas} className='img7' alt='...' /></div>
-                                        <div className="carousel__cell number-slide5"><img src={picnicDetails} className='img7' alt='...' /></div>
+                                        <div className="carousel__cell number-slide1 "><img src={sohidminar3} className='img7 img-fluid' alt='...' /></div>
+                                        <div className="carousel__cell number-slide2"><img src={leading} className='img7 img-fluid' alt='...' /></div>
+                                        <div className="carousel__cell number-slide3"><img src={sohidminar3} className='img7 img-fluid' alt='...' /></div>
+                                        <div className="carousel__cell number-slide4"><img src={leading} className='img7 img-fluid' alt='...' /></div>
+                                        {/* <div className="carousel__cell number-slide5">5</div> */}
                                     </div>
                                 </div>
                             </div>
@@ -109,10 +111,15 @@ const Login = () => {
                                 </div>
                                 {(user) &&
                                     <>
-                                        <div class="home-details">
-                                            <h2 class="home-title fw-semibold">{user.displayName}</h2>
-                                            <span class="home-caption"><span className='text-black fw-semibold'>ID : </span>2012020191</span>
-                                        </div>
+                                        {currentUser.map(currentUser =>
+                                            <div class="home-details" key={currentUser._id}>
+                                                {currentUser.uid === user.uid ? <>
+                                                    <h2 class="home-title">{currentUser.name}</h2>
+                                                    <span class="home-caption"><span className='text-black'>Batch : </span>{currentUser.batch}</span>
+                                                </> : <></>}
+                                            </div>
+                                        )}
+
 
                                     </>}
                             </div>
@@ -121,7 +128,7 @@ const Login = () => {
                 </div>
 
             </div>
-        </div >
+        </div>
 
     );
 };

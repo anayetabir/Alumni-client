@@ -76,10 +76,11 @@ const Event = () => {
 
 
     return (
-        <div className='event '>
-            <div className='p-5 m-5 w-100 mx-auto'>
+        <div className='event'>
+            <div className='w-100 mx-auto pt-5'>
                 <div id='carouselExampleCaptions' className='carousel slide' data-bs-ride='carousel'>
-                    <div className='carousel-inner'>
+                    <h1 className='fw-bold'>Events</h1>
+                    <div className='carousel-inner evt-carousel'>
                         {pairedEvents.map((pair, index) => (
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval='5000'>
                                 <div className='container1 d-flex justify-content-center'>
@@ -144,15 +145,17 @@ const Event = () => {
                 </div>
 
                 {(user) ? (
-                    <div className='d-flex'>
-                        <div className='ms-auto'>
-                            <div className='x'>
-                                <Link to={'/createEvent'}>
-                                    <img src={cevent} alt='' />
-                                </Link>
+                    (userData.find(userDoc => userDoc.uid === user.uid && (userDoc.role === 'superAdmin' || userDoc.role === 'admin'))) && (
+                        <div className='d-flex'>
+                            <div className='ms-auto'>
+                                <div className='x'>
+                                    <Link to={'/createEvent'}>
+                                        <img src={cevent} alt='' />
+                                    </Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    )
                 ) : null}
 
             </div>

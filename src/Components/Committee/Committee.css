@@ -52,7 +52,7 @@
 }
 
 .cus-card {
-    border: 5px solid;
+    border: 1px solid;
     border-color: #EFF0FF;
     /* border: none; */
 }
@@ -60,12 +60,4 @@
 .cus-card:hover {
     border: 3px solid;
     border-color: #d8daf7;
-}
-
-.comm_img {
-
-    width: 100%;
-
-
-
 }
