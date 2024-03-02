@@ -20,7 +20,7 @@ const Whyjoinus = () => {
             <div className="backCLR">
                 <div className='container-fluid mt-5'>
                     <h3 className='text-center text-secondary'>Still ◕‿‿◕ thinking over it? </h3>
-                    <h1 className='text-center mb-4'>Here is why you should join us</h1>
+                    <h1 className='text-center mb-4'>Here is why you should Join us</h1>
                     <div className='row p-4'>
                         <div className='col-md-4 btn-light'>
                             <div className="card text-white h-100 bg mb-3 p-3 shadow">

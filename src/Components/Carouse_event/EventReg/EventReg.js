@@ -35,11 +35,23 @@ const EventReg = () => {
         const form = event.target;
         const name = form.name.value;
         const email = form.email.value;
+        const batchNo = form.batchNo.value;
         const studentId = form.studentId.value;
         const transactionID = form.transactionID.value;
 
-        const newEventReg = { name, email, studentId, transactionID, eventsId };
+        const newEventReg = { name, email, batchNo, studentId, transactionID, eventsId };
         console.log(newEventReg);
+
+        if (!name.trim() || !email.trim() || !studentId.trim() || !transactionID.trim()) {
+            // If post value is empty or contains only whitespace
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please write all required data before submitting.',
+                icon: 'error',
+                confirmButtonText: 'Ok'
+            });
+            return;
+        }
 
         form.reset();
 
@@ -161,24 +173,20 @@ const EventReg = () => {
 
                     <button class="btn btn-primary " type="submit">Register Event</button>
                 </form> */}
-
-
-            
-
-
                 <div className="evt-container">
-                    <form action="" className='evt-form'>
+                    <form onSubmit={(event) => EventRegSubmit(event, events._id)} className='evt-form'>
                         <div className="evt-card evt-cart">
-                            <b><label className="evt-title">Registration</label></b>
+                            <b><h1 className="evt-title">Registration</h1></b>
                             <hr className="evt-hr" />
                             <div className="evt-steps">
                                 <div className="evt-step">
                                     <div>
                                         <span>Details</span>
                                         <div className="">
-                                            <input type="text" placeholder="Enter a Name" className="evt-input_field" />
-                                            <input type="text" placeholder="Enter a Email" className="evt-input_field" />
-                                            <input type="text" placeholder="Enter a Student ID" className="evt-input_field" />
+                                            <input type="text" placeholder="Enter a Name" className="evt-input_field" name='name' />
+                                            <input type="text" placeholder="Enter a Batch No." className="evt-input_field" name='batchNo' />
+                                            <input type="number" placeholder="Enter a Student ID" className="evt-input_field" name='studentId' />
+                                            <input type="email" placeholder="Enter a Email" className="evt-input_field" name='email' />
                                         </div>
                                     </div>
                                     <hr className="evt-hr" />
@@ -190,7 +198,7 @@ const EventReg = () => {
                                     <hr className="evt-hr" />
                                     <div className="evt-promo">
                                         <span>Transaction ID</span>
-                                        <input type="text" placeholder="Enter a Promo Code" className="evt-input_field" />
+                                        <input type="text" placeholder="Enter a Promo Code" className="evt-input_field" name="transactionID" />
                                     </div>
                                     <hr className="evt-hr" />
                                 </div>
@@ -225,6 +233,7 @@ const EventReg = () => {
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Email</th>
+                                                <th>Batch No.</th>
                                                 <th>Student ID</th>
                                                 <th>Transaction ID</th>
 
@@ -246,6 +255,9 @@ const EventReg = () => {
                                                             </td>
                                                             <td>
                                                                 {regs.email}
+                                                            </td>
+                                                            <td>
+                                                                {regs.batchNo}
                                                             </td>
                                                             <td>
                                                                 {regs.studentId}
