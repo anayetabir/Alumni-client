@@ -46,7 +46,7 @@ const ArticleUpdate = () => {
         <div>
             <h1 className='Up-h5'>Update: {article.title}</h1>
             {/* <h2 className="Up-title">Title:</h2> */}
-            <div className='m-5 p-5 justify-content-center'>
+            <div className='mt-5 pt-5 justify-content-center'>
                 <div className="row">
 
                     <div className="col-md-6">

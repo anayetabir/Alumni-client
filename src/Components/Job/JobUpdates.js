@@ -69,7 +69,7 @@ const JobUpdates = () => {
                         <div>
                             <h4 className='job-Update'>Update Job</h4>
                         </div>
-                        <div className='formfield'>
+                        <div className='formfield d-flex justify-content-center'>
                             <form onSubmit={handleUpdateJob}>
                                 <div className="form-floating mb-3">
                                     <input defaultValue={name} type="text" name="name" className="form-control" placeholder='Company' id="floatingInputDisabled" />

@@ -75,7 +75,7 @@ const UpdateEvent = () => {
                         <div>
                             <h4>Update {events.title}</h4>
                         </div>
-                        <div className='formfield'>
+                        <div className='formfield d-flex justify-content-center'>
 
                             <form onSubmit={handleUpdateEvent}>
 

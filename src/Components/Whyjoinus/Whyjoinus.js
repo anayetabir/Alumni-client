@@ -21,9 +21,9 @@ const Whyjoinus = () => {
                 <div className='container-fluid mt-5'>
                     <h3 className='text-center text-secondary'>Still ◕‿‿◕ thinking over it? </h3>
                     <h1 className='text-center mb-4'>Here is why you should Join us</h1>
-                    <div className='row p-4'>
-                        <div className='col-md-4 btn-light'>
-                            <div className="card text-white h-100 bg mb-3 p-3 shadow">
+                    <div className='row p-4 '>
+                        <div className='col-md-4 btn-light mb-2'>
+                            <div className="card text-white h-100 bg mb-5 p-3 shadow">
                                 {/* <img src={job} className="card-img-top" /> */}
                                 <img src={connect} alt='' className='card-img-top image1' />
                                 <div className="card-header text-primary">Reconnect</div>
@@ -32,8 +32,8 @@ const Whyjoinus = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-4 btn-light'>
-                            <div className="card text-white h-100 bg mb-3 p-3 shadow">
+                        <div className='col-md-4 btn-light mb-2'>
+                            <div className="card text-white h-100 bg mb-5 p-3 shadow">
                                 <img src={event} alt='' className='card-img-top image1' />
                                 <div className="card-header text-primary">Give Back</div>
                                 <div className="card-body">
@@ -41,8 +41,8 @@ const Whyjoinus = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-4 btn-light'>
-                            <div className="card text-white h-100 bg mb-3 p-3 shadow">
+                        <div className='col-md-4 btn-light mb-2'>
+                            <div className="card text-white h-100 bg mb-5 p-3 shadow">
                                 <img src={job} alt='' className='card-img-top image1' />
                                 <div className="card-header text-primary">Advance</div>
                                 <div className="card-body">

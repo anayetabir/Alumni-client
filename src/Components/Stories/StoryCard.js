@@ -66,7 +66,7 @@ const StoryCard = ({ story, setStories, stories }) => {
               <div className="col-md-4 p-3 mt-2">
                 <img src={photo} className="img-fluid object-fit-md-contain" alt="..." />
               </div>
-              <div className="col-md-8 mt-3">
+              <div className="col-md-8 mt-3 p-2">
                 <div className="stories-body text-start">
                   <h5 className="stories-title link-primaryz"><u>{title}</u></h5>
                   <p className="stories-text  mt-2 ">{details}</p>
@@ -85,9 +85,9 @@ const StoryCard = ({ story, setStories, stories }) => {
                       <button
                         onClick={() => handleDelete(_id)}
                         className="dropdown-item delete">Delete</button>
-                      <button
+                      {/* <button
 
-                        className="dropdown-item update">Update</button>
+                        className="dropdown-item update">Update</button> */}
                     </div>
                   </div>
                 </>
