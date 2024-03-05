@@ -64,7 +64,7 @@ const ArticleCreate = () => {
 
 
     return (
-        <div className='m-5 p-5'>
+        <div className='mt-5 pt-5'>
             <div className="row">
 
                 <div className="col-md-6">

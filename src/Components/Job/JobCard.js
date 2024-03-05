@@ -67,9 +67,9 @@ const JobCard = ({ job, jobs, setJobs }) => {
 
   return (
 
-    <div>
+    <div className=''>
 
-      <div className="grid-container">
+      <div className="grid-container ">
         <Link to={`/jobapply/${_id}`}>
           <div className="grid-item w-100 job-card" onClick={() => { handleApply(_id) }}>
             <h3 className="job-name"> {job.name} </h3>

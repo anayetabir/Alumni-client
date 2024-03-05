@@ -161,6 +161,8 @@ form {
 .left-part {
     align-items: center;
     background: transparent;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -211,48 +213,48 @@ form {
 /* tooltip */
 
 .article-tooltip-container {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
 }
 
 .article-tooltip-text {
-  color: #333;
-  font-size: 18px;
-  cursor: pointer;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .article-tooltip {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  visibility: hidden;
-  background: #FFFDD0;
-  color: #fff;
-  padding: 10px;
-  border-radius: 4px;
-  transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;
-  z-index: 1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    background: #FFFDD0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .article-tooltip::before {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent transparent #FFFDD0 transparent;
-  transform: translateX(-50%);
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #FFFDD0 transparent;
+    transform: translateX(-50%);
 }
 
 .article-tooltip-container:hover .article-tooltip {
-  top: 120%;
-  opacity: 1;
-  visibility: visible;
-  background: #FFFDD0;
-  transform: translate(-50%, -5px);
+    top: 120%;
+    opacity: 1;
+    visibility: visible;
+    background: #FFFDD0;
+    transform: translate(-50%, -5px);
 }

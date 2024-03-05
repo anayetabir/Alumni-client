@@ -10,7 +10,7 @@ import logo6 from '../img/logo6.svg';
 const Head = () => {
 
 
-
+    
     const { user, logOut } = useContext(AuthContext);
     // console.log(user);
 
@@ -29,11 +29,9 @@ const Head = () => {
     }, [])
 
 
-
-
     return (
-        <div >
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark nb ">
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark nb">
                 {/* <a className="navbar-brand" href="#">CSE-AA-LU</a> */}
                 <Link to={'/'} className="navbar-brand mx-3 fs-5">
                     <img src={logo6} className='img-fluid' alt='' />
@@ -42,11 +40,10 @@ const Head = () => {
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse " id="navbarNav ">
+                <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
-                        {/* <li className="nav-item ">
-                           
-                            <NavLink to={'/businesses'} className="nav-link" activeClassName="active">Businesses</NavLink>
+                        {/* <li className="nav-item">
+                            <Link to={'/businesses'} className="nav-link">Businesses</Link>
                         </li> */}
                         <li className="nav-item">
                             {/* <a className="nav-link" href="#">Job-Opportunity</a> */}
@@ -84,17 +81,17 @@ const Head = () => {
 
                     </ul>
 
-                    <div className="ms-auto my-2 my-lg-0 mx-5">
+                    <div className="ms-auto">
 
                         {
                             (user) ?
                                 <>
-                                    <div className="btn-group dropstart">
+                                    <div className="btn-group mx-5">
                                         <button className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                             <img src={profile} alt="" />
                                         </button>
                                         <div className='mx-auto'>
-                                            <div className="dropdown-menu" >
+                                            <div className="dropdown-menu dropdown-menu-start dropdown-menu-lg-end" >
                                                 <span className="dropdown-item">{(user && user.displayName) || (userData && userData.name)}</span>
                                                 <div role="separator" className="dropdown-divider"></div>
                                                 <Link to={'/profile'} className="dropdown-item">Profile</Link>
@@ -119,7 +116,7 @@ const Head = () => {
                                                     )
                                                 } */}
                                                 {
-                                                    userData.find(userDoc => userDoc.uid === user.uid && (userDoc.role === 'superAdmin' || userDoc.role === 'admin')) && (
+                                                    userData.find(userDoc => userDoc.uid === user.uid && (userDoc.role === 'superAdmin' || userDoc.role === 'admin' )) && (
                                                         <>
                                                             <Link to={'/superadmin'} className="dropdown-item">Admin Dashboard</Link>
                                                             <div role="separator" className="dropdown-divider"></div>

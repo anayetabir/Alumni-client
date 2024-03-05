@@ -92,3 +92,15 @@
 .soi1 {
     color: black;
 }
+
+@media screen and (max-width: 560px) {
+    .team {
+        margin-top: 100px;
+        margin-left: 15%;
+
+    }
+
+    .teamF {
+        gap: 30px;
+    }
+}

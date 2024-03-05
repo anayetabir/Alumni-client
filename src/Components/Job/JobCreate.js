@@ -82,7 +82,7 @@ const JobCreate = () => {
                     <div>
                         <h4> Create Job Post </h4>
                     </div>
-                    <div className='formfield'>
+                    <div className='formfield d-flex justify-content-center '>
                         <form onSubmit={handleAddJob}>
                             <div className="form-floating mb-3">
                                 <input type="text" name="name" className="form-control" placeholder='Company' id="floatingInputDisabled" />
