@@ -10,9 +10,29 @@
     box-shadow: 4px 11px 13px 0px rgba(0, 0, 0, 0.25), 5px 6px 24px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 320px) {
 
     /* Adjust the width for screens smaller than 768px (mobile) */
+    .bg-get-board {
+        width: 100%;
+        padding: 15px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    /* Adjust the width for screens smaller than 768px (mobile) */
+    .bg-get-board {
+        width: 100%;
+        padding: 15px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* Adjust the width for screens middium than 768px (table) */
     .bg-get-board {
         width: 100%;
         padding: 15px;
